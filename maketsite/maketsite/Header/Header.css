@@ -1,0 +1,42 @@
+
+.header {
+	background-image: url("../MaketSite/jpg/icon2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	height: 500px;
+  }
+
+.search-block{
+	float: right;
+	text-align: center;
+	padding: 20px;
+}
+
+.menu{
+	position: relative;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #FFDB00;
+}

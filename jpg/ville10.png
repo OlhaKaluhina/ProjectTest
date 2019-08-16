@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://www.skyhousedowntown.com/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="desktop chrome windows scrollable page-ready page-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./ville10_files/nr-1123.min.js.завантаження"></script><script type="text/javascript" async="" src="./ville10_files/analytics.js.завантаження"></script><script type="text/javascript" id="www-widgetapi-script" src="./ville10_files/www-widgetapi.js.завантаження" async=""></script><script src="./ville10_files/iframe_api" id="YTAPI"></script>
+	<script async="" src="./ville10_files/gtm.js.завантаження"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<title>Skyhouse | Luxury Apartments in Downtown Houston</title>
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" type="text/javascript">//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- This site is optimized with the Yoast SEO plugin v9.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Skyhouse Downtown is not only home to some of the best apartments in Houston, TX, but also home to retailers located on the ground floor of each tower. Find your new favorite shops, just steps away from your doorstep.">
+<link rel="canonical" href="https://www.skyhousedowntown.com/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Skyhouse | Luxury Apartments in Downtown Houston">
+<meta property="og:description" content="Skyhouse Downtown is not only home to some of the best apartments in Houston, TX, but also home to retailers located on the ground floor of each tower. Find your new favorite shops, just steps away from your doorstep.">
+<meta property="og:url" content="https://www.skyhousedowntown.com/">
+<meta property="og:site_name" content="Skyhouse Downtown">
+<meta property="og:image" content="https://www.skyhousedowntown.com/wp-content/uploads/2018/05/skyhouse-logo-1024x213.png">
+<meta property="og:image:secure_url" content="https://www.skyhousedowntown.com/wp-content/uploads/2018/05/skyhouse-logo-1024x213.png">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="213">
+<meta property="og:image:alt" content="Skyhouse Downtown Logo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="Skyhouse Downtown is not only home to some of the best apartments in Houston, TX, but also home to retailers located on the ground floor of each tower. Find your new favorite shops, just steps away from your doorstep.">
+<meta name="twitter:title" content="Skyhouse | Luxury Apartments in Downtown Houston">
+<meta name="twitter:site" content="@SkyhouseMain">
+<meta name="twitter:image" content="https://www.skyhousedowntown.com/wp-content/uploads/2018/05/skyhouse-logo.png">
+<meta name="twitter:creator" content="@SkyhouseMain">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://www.skyhousedowntown.com/#website","url":"https://www.skyhousedowntown.com/","name":"Skyhouse Downtown","potentialAction":{"@type":"SearchAction","target":"https://www.skyhousedowntown.com/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<meta name="google-site-verification" content="kStLoo1FTFxKUXys8b_htqBtPJModXrcidaPDJo8apk">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://apt.razzinteractive.com/">
+<link rel="dns-prefetch" href="https://www.skyhousedowntown.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Skyhouse Downtown » Feed" href="https://www.skyhousedowntown.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Skyhouse Downtown » Comments Feed" href="https://www.skyhousedowntown.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Skyhouse Downtown » Home Comments Feed" href="https://www.skyhousedowntown.com/home/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.skyhousedowntown.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./ville10_files/wp-emoji-release.min.js.завантаження" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="foobox-min-css" href="./ville10_files/foobox.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="razz-nbhd-client-style-css" href="./ville10_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="googlefont-opensans-css" href="./ville10_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./ville10_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css-css" href="./ville10_files/animate.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="razz-announcement-style-css" href="./ville10_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-fontawesome-css" href="./ville10_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-google-fonts-css" href="./ville10_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="theme-default-style-css" href="./ville10_files/style(2).css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-slide-style-css" href="./ville10_files/slide.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-custom-style-css" href="./ville10_files/theme-custom.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-responsive-style-css" href="./ville10_files/responsive-style.css" type="text/css" media="all">
+<script type="text/javascript" src="./ville10_files/jquery.min.js.завантаження"></script>
+<script type="text/javascript" src="./ville10_files/gtm4wp-form-move-tracker.js.завантаження"></script>
+<script type="text/javascript" src="./ville10_files/foobox.min.js.завантаження"></script>
+<link rel="https://api.w.org/" href="https://www.skyhousedowntown.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.skyhousedowntown.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.skyhousedowntown.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.7">
+<link rel="shortlink" href="https://www.skyhousedowntown.com/">
+<link rel="alternate" type="application/json+oembed" href="https://www.skyhousedowntown.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.skyhousedowntown.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.skyhousedowntown.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.skyhousedowntown.com%2F&amp;format=xml">
+<script type="text/javascript">/* Run FooBox (v2.4.0.0) */
+(function( FOOBOX, $, undefined ) {
+  FOOBOX.o = {wordpress: { enabled: true }, pan: { enabled: true, showOverview: true, position: "fbx-top-right" }, deeplinking : { enabled: true, prefix: "gallery" }, effect: 'fbx-effect-3', images: {  showCaptions:false }, excludes:'.fbx-link,.nofoobox,.nolightbox,a[href*="pinterest.com/pin/create/button/"]', affiliate : { enabled: false }, slideshow: { enabled:true}, social: {"enabled":true,"position":"fbx-above","mailto":true,"download":true,"excludes":["iframe","html"],"nonce":"b1de8a9668","networks":["facebook","twitter","pinterest","linkedin","tumblr","reddit"]}, preload:true};
+  FOOBOX.init = function() {
+    $(".fbx-link").removeClass("fbx-link");
+    $(".gallery").foobox(FOOBOX.o);
+    $(".foobox, [target=\"foobox\"]").foobox(FOOBOX.o);
+    $(".wp-caption").foobox(FOOBOX.o);
+    $("a:has(img[class*=wp-image-])").foobox(FOOBOX.o);
+
+  };
+}( window.FOOBOX = window.FOOBOX || {}, FooBox.$ ));
+
+jQuery(function() {
+
+  jQuery("body").append("<span style=\"font-family:'foobox'; color:transparent; position:absolute; top:-1000em;\">f</span>");
+  FOOBOX.init();
+  jQuery(document).trigger("foobox-after-init");
+  jQuery('body').on('post-load', function(){ FOOBOX.init(); });
+
+});
+</script>
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" type="text/javascript">//<![CDATA[
+	dataLayer.push({"pagePostType":"frontpage","pagePostType2":"single-page","pagePostAuthor":"admin"});//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TWS37TZ');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="pingback" href="https://www.skyhousedowntown.com/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<link rel="icon" href="https://www.skyhousedowntown.com/wp-content/uploads/2018/05/cropped-Skyhouse-Favicon-32x32.jpg" sizes="32x32">
+<link rel="icon" href="https://www.skyhousedowntown.com/wp-content/uploads/2018/05/cropped-Skyhouse-Favicon-192x192.jpg" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://www.skyhousedowntown.com/wp-content/uploads/2018/05/cropped-Skyhouse-Favicon-180x180.jpg">
+<meta name="msapplication-TileImage" content="https://www.skyhousedowntown.com/wp-content/uploads/2018/05/cropped-Skyhouse-Favicon-270x270.jpg">
+<style type="text/css">
+
+</style><style type="text/css">:root a[href^="http://www.drowle.com/"], :root #\5f _mom_ad_2, :root #header + #content > #left > #rlblock_left, :root [data-leadlink*="admitlead."][data-leadlink*="/sb/clk/"], :root a[href^="https://www.adxtro.com/"], :root #MT_overroll ~ div[class][style="left:0px;top:0px;height:480px;width:650px;"], :root #rhs_block .mod > .luhb-div > div[data-async-type="updateHotelBookingModule"], :root #\5f _admvnlb_modal_container, :root a[href^="http://keep2share.cc/pr/"], :root a[href^="//voyeurhit.com/cs/"], :root #MAIN.ShowTopic > .ad, :root a[href^="https://www.arthrozene.com/"][href*="?tid="], :root #\5f _mom_ad_12, :root #center_col > #main > .dfrd > .mnr-c > .c._oc._zs, :root [onclick*="trklp.ru"], :root a[href*="/getdriverpack.ru"], :root div[id^="zcbclk"], :root [id*="MGWrap"], :root a[href^="http://amigodistr.ru/"], :root a[href^="https://t.mobtya.com/"], :root .__y_elastic .__y_item, :root aside[itemtype="https://schema.org/WPAdBlock"], :root a[href*="medinforms.ru"], :root a[href^="http://ul.to/ref/"], :root a[href*="down-news-games.ru"], :root #\5f _nq__hh[style="display:block!important"], :root a[href^="http://landingpagegenius.com/"], :root a[href^="http://ads.pheedo.com/"], :root .inlineNewsletterSubscription + .inlineNewsletterSubscription div[class$="_item"], :root aside[id^="advads_ad_widget-"], :root a[href^="http://www.getyourguide.com/?partner_id="], :root a[href^="http://lp.ncdownloader.com/"], :root #ads > .dose > .dosesingle, :root .base-page_left-side > #left_ban, :root a[href*="/universalsrc.com/"], :root a[href^="http://media.paddypower.com/redirect.aspx?"], :root a[href^="http://www.adskeeper.co.uk/"], :root a[href*="//universalse.info/"], :root #assetsListings[style="display: block;"], :root [data-link*="/sb/clk/"], :root a[href*="muz-loader.site"], :root a[href^="http://b.bestcompleteusa.info/"], :root #main-content > [style="padding:10px 0 0 0 !important;"], :root #center_col > #\5f Emc, :root a[href*="kingoablc.com"], :root a[href*="torrentum.ru"], :root a[href^="http://secure.signup-way.com/"], :root a[href^="http://easydownload4you.com/"], :root #center_col > #res > #topstuff + #search > div > #ires > #rso > #flun, :root a[href^="http://web.adblade.com/"], :root a[href^="http://cdn3.adexprts.com/"], :root a[href^="http://www.affbuzzads.com/affiliate/"], :root #center_col > #resultStats + #tads, :root #center_col > #resultStats + #tads + #res + #tads, :root a[href^="http://track.trkvluum.com/"], :root #cnt #center_col > #taw > #tvcap > .c._oc._Lp, :root a[href^="http://codec.codecm.com/"], :root #center_col > #resultStats + div + #res + #tads, :root #center_col > #resultStats + div[style="border:1px solid #dedede;margin-bottom:11px;padding:5px 7px 5px 6px"], :root a[href*="wow-partners.com/click.php"], :root a[href^="http://liversely.com/"], :root div[id^="div-gpt-ad"], :root div[class^="block-openx-"], :root #center_col > #taw > #tvcap > .commercial-unit-desktop-top, :root #resultspanel > #topads, :root a[href^="https://www.firstload.com/affiliate/"], :root a[href*="5iclx7wa4q.com"], :root #topstuff > #tads, :root a[href^="https://bnsjb1ab1e.com/"], :root #center_col > #taw > #tvcap > .rscontainer, :root a[href^="//porngames.adult/?SID="], :root a[href*=".orgsales.ru"], :root a[href^="http://adtrackone.eu/"], :root div[data-flt-ve="sponsored_search_ads"], :root a[href^="https://keep2share.cc/pr/"], :root .commercial-unit-mobile-top .jackpot-main-content-container > .UpgKEd + .nZZLFc > .vci, :root a[href^="http://www.bet365.com/"][href*="?affiliate="], :root DIV[id^="DIV_NNN_"], :root #center_col > div[style="font-size:14px;margin-right:0;min-height:5px"] > div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff8e7"], :root a[href^="http://fileloadr.com/"], :root .gbfwa > div[class$="_item"], :root div[id^="ad_script_"], :root a[href^="http://www.friendlyadvertisements.com/"], :root #cnt #center_col > #res > #topstuff > .ts, :root a[href^="http://affiliates.pinnaclesports.com/processing/"], :root #mn div[style="position:relative"] > #center_col > ._Ak, :root a[href*=".clksite.com/"], :root #content > #center > .dose > .dosesingle, :root #content > #right > .dose > .dosesingle, :root a[href^="http://fsoft4down.com/"], :root a[href^="http://buysellads.com/"], :root #flowplayer > div[style="position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px; z-index: 999;"], :root #mn #center_col > div > h2.spon:first-child + ol:last-child, :root a[href^="http://www.easydownloadnow.com/"], :root a[href^="http://n217adserv.com/"], :root a[href*="emprestimo.eu"], :root .rc-cta[data-target], :root #flowplayer > div[style="z-index: 208; position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px;"], :root div[id^="ads120_600-widget"], :root a[href^="http://c.ketads.com/"], :root a[href^="http://reals-story.ru/"], :root .GB3L-QEDGY .GB3L-QEDF- > .GB3L-QEDE-, :root #main_col > #center_col div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff7ed"], :root a[href^="http://www.usearchmedia.com/signup?"], :root a[href^="https://gogoman.me/"], :root a[href^="http://banners.victor.com/processing/"], :root .__zinit .__y_item, :root #mbEnd[cellspacing="0"][cellpadding="0"], :root div[id^="news_nest_net_ru"], :root a[href^="http://ads.sprintrade.com/"], :root #mn #center_col > div > h2.spon:first-child, :root #rhs_block > .ts[cellspacing="0"][cellpadding="0"][style="padding:0"], :root a[href^="http://farm.plista.com/pets"], :root .__yinit .__y_item, :root a[href^="https://incisivetrk.cvtr.io/click?"], :root #mn div[style="position:relative"] > #center_col > div > ._dPg, :root #rhs_block > #mbEnd, :root a[href^="http://www.faceporn.net/free?"], :root a[href^="//look.djfiln.com/"], :root a[href^="http://uploaded.net/ref/"], :root #rhs_block .mod > .gws-local-hotels__booking-module, :root a[href^="http://jobitem.org/"], :root a[href^="http://www.fbooksluts.com/"], :root #rhs_block .xpdopen > ._OKe > div > .mod > ._yYf, :root a[href^="http://www.moneyducks.com/"], :root #rhs_block > ol > .rhsvw > .kp-blk > .xpdopen > ._OKe > ol > ._DJe > .luhb-div, :root a[href*=".allsports4you.club"], :root a[href^="http://taboola-"][href*="/redirect.php?app.type="], :root a[href*="verismediya.ru/sb/clk/"], :root #rhs_block > script + .c._oc._Ve.rhsvw, :root #tads + div + .c, :root a[href^="http://www.uniblue.com/cm/"], :root a[href^="http://ads.betfair.com/redirect.aspx?"], :root a[href^="https://mk-ads.com/"], :root #rhswrapper > #rhssection[border="0"][bgcolor="#ffffff"], :root a[href^="http://adserver.itsfogo.com/"], :root #ssmiwdiv[jsdisplay], :root a[href^="https://sexdatingz.live/"], :root a[href*="//ext-load.net"], :root .__ywl .__y_item, :root a[href^="http://ads.activtrades.com/"], :root .GFYY1SVD2 > .GFYY1SVC2 > .GFYY1SVF5, :root a[href^="http://9nl.es/"], :root .GHOFUQ5BG2 > .GHOFUQ5BF2 > .GHOFUQ5BG5, :root .GFYY1SVE2 > .GFYY1SVD2 > .GFYY1SVG5, :root div[id^="mainads"], :root div[id^="ads_games_"], :root .jobs-information-call-to-action + .jobs-information-call-to-action div[class$="_item"], :root a[href^="http://go.oclaserver.com/"], :root a[href^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://clickandjoinyourgirl.com/"], :root a[href^="http://www.terraclicks.com/"], :root .GJJKPX2N1 > .GJJKPX2M1 > .GJJKPX2P4, :root .GKJYXHBF2 > .GKJYXHBE2 > .GKJYXHBH5, :root .GPMV2XEDA2 > .GPMV2XEDP1 > .GPMV2XEDJBB, :root a[href^="http://www.streamtunerhd.com/signup?"], :root .Mpopup + #Mad > #MadZone, :root .__y_inner > .__y_item, :root .__ywvr .__y_item, :root .ch[onclick="ga(this,event)"], :root a[href^="http://goldmoney.com/?gmrefcode="], :root .commercial-unit-desktop-rhs > .iKidV > .Ee92ae + .P2mpm + .hp3sk, :root a[href^="http://callville.xyz/"], :root .icons-rss-feed + .icons-rss-feed div[class$="_item"], :root a[href*="nhebd.xyz"], :root a[href^="http://www.epicgameads.com/"], :root a[href^="http://hyperlinksecure.com/go/"], :root .l-container > #fishtank, :root div[id^="trafmag_"], :root a[href^="http://ad.yieldmanager.com/"], :root .lads[width="100%"][style="background:#FFF8DD"], :root .mod > ._jH + .rscontainer, :root a[href^="http://websitedhoome.com/"], :root .trc_rbox_div .syndicatedItem, :root a[href*="//universalies.info/"], :root .mw > #rcnt > #center_col > #taw > #tvcap > .c, :root .mw > #rcnt > #center_col > #taw > .c, :root a[href^="http://xads.zedo.com/"], :root a[href^="https://uncensored3d.com/"], :root a[href^="http://clicks.binarypromos.com/"], :root .nrelate .nr_partner, :root .ob_container .item-container-obpd, :root a[href^="http://www.paddypower.com/?AFF_ID="], :root a[href*=".clkcln.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root .plistaList > .itemLinkPET, :root a[href^="http://adtransfer.net/"], :root a[href^="http://bcp.crwdcntrl.net/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root a[href*=".revimedia.com/"], :root .plista_widget_belowArticleRelaunch_item[data-type="pet"], :root a[href^="http://abc2.mobile-10.com/"], :root .ra[align="left"][width="30%"], :root .ra[align="right"][width="30%"], :root .ra[width="30%"][align="right"] + table[width="70%"][cellpadding="0"], :root .rhsvw[style="background-color:#fff;margin:0 0 14px;padding-bottom:1px;padding-top:1px;"], :root a[href^="http://www.fducks.com/"], :root .rscontainer > .ellip, :root a[href^="http://record.sportsbetaffiliates.com.au/"], :root .section-result[data-result-ad-type], :root a[href^="http://cinema.friendscout24.de?"], :root .min-width-normal > #popup_container, :root .trc_rbox .syndicatedItem, :root .trc_rbox_border_elm .syndicatedItem, :root a[href^="https://medleyads.com/"], :root #adv_unisound ~ #main > #slidercontentContainer, :root [src^="//am15.net/?"], :root .trc_rbox_div .syndicatedItemUB, :root .trc_rbox_div a[target="_blank"][href^="http://tab"], :root a[href*="/uloads.ru/"], :root .trc_related_container div[data-item-syndicated="true"], :root iframe[src^="http://ad.yieldmanager.com/"], :root a[href*="/universallnk.net/"], :root .vi-lb-placeholder[title="ADVERTISEMENT"], :root a[href*="a2g-secure.com"], :root .widget-pane-section-result[data-result-ad-type], :root a[href^="http://www.ringtonematcher.com/"], :root a[href^="http://record.commissionking.com/"], :root AD-SLOT, :root a[href^="http://bodelen.com/"], :root a[href^="http://www.friendlyduck.com/AF_"], :root AD-TRIPLE-BOX, :root div[id^="dmRosAdWrapper"], :root a[href^="http://ddownload39.club/"], :root object[data^="blob"], :root div[id^="div-adtech-ad-"], :root ADS-RIGHT, :root a[data-href*="recreativ.ru"], :root a[href*=".irtyc.com/"], :root AFS-AD, :root div[id^="div_openx_ad_"], :root a[href^="//srv.buysellads.com/"], :root AMP-AD, :root DFP-AD, :root FBS-AD, :root LEADERBOARD-AD, :root a[href^="http://ad.au.doubleclick.net/"], :root a[href*="deliver.trafficfabrik.com"], :root a[href*="/eversaree.bid"], :root a[href^="https://ilovemyfreedoms.com/"][href*="?affiliate_id="], :root a[href^="http://engine.newsmaxfeednetwork.com/"], :root [ad-id^="googlead"], :root [href*="//xml.revrtb.com/"], :root [href^="https://maskip.co/"], :root a[href^="https://track.themadtrcker.com/"], :root a[href^="http://1phads.com/"], :root [id*="MarketGid"], :root a[href^="http://igromir.info/"], :root [id*="ScriptRoot"], :root [id^="bunyad_ads_"], :root [lazy-ad="leftbottom_banner"], :root a[href*="rexchange.begun.ru/rclick?"], :root a[href^="http://track.incognitovpn.com/"], :root a[href^="http://s9kkremkr0.com/"], :root a[href*="ads-provider.com"], :root [lazy-ad="leftthin_banner"], :root [lazy-ad="lefttop_banner"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="http://www.liversely.net/"], :root [lazy-ad="top_banner"], :root div[id^="republer_"], :root a[href^="http://www.bluehost.com/track/"] > img, :root a[href^="https://www.what-sexdating.com/"], :root a[href^="http://c.jumia.io/"], :root [onclick*="content.ad/"], :root a[href^="http://pokershibes.com/index.php?ref="], :root [onclick^="window.open('http://adultfriendfinder.com/search/"], :root [onclick^="window.open('https://www.brazzersnetwork.com/landing/"], :root a[href^="http://www.myfreepaysite.com/sfw.php?aid"], :root [onclick^="window.open('window.open('//delivery.trafficfabrik.com/"], :root iframe[src^="http://static.mozo.com.au/strips/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root div[id^="dfp-ad-"], :root a[href="http://advert.mirtesen.ru/"], :root a[href^="http://dethao.com/"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root [src^="/Redirect.a2b?"], :root a[href^="http://intent.bingads.com/"], :root a[href^=" http://n47adshostnet.com/"], :root aside[id^="adrotate_widgets-"], :root a[href*="traflabs.xyz"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://get.slickvpn.com/"], :root a[data-oburl^="http://paid.outbrain.com/network/redir?"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root a[data-redirect^="http://click.plista.com/pets"], :root a[href^="http://affiliate.godaddy.com/"], :root a[data-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.cdjapan.co.jp/aff/click.cgi/"], :root a[href^="http://adclick.g.doubleclick.net/"], :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], :root div[class^="lifeOnwerAd"], :root a[href*="cpl1.ru"], :root a[data-url^="http://paid.outbrain.com/network/redir?"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="http://hd-plugins.com/download/"], :root a[href^="https://jmp.awempire.com/"], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href*="shakes.pro"], :root a[href$="/vghd.shtml"], :root a[href^="https://intrev.co/"], :root a[href*=".adk2x.com/"], :root a[href^="http://mmo123.co/"], :root a[href*=".adsrv.eacdn.com/"] > img, :root a[href*="/cmd.php?ad="], :root a[href*=".approvallamp.club/"], :root td[valign="top"] > .mainmenu[style="padding:10px 0 0 0 !important;"], :root a[href^="http://bluehost.com/track/"], :root a[href*=".bang.com/"][href*="&aff="], :root a[href^="http://www.my-dirty-hobby.com/?sub="], :root a[href*=".ichlnk.com/"], :root a[href*="=adscript"], :root a[href*=".inclk.com/"], :root a[href^="http://www.fleshlight.com/"], :root a[href^="http://vo2.qrlsx.com/"], :root a[href^="https://tracking.truthfinder.com/?a="], :root a[href*=".intab.fun/"], :root a[href^="http://k2s.cc/pr/"], :root a[href^="http://6kup12tgxx.com/"], :root a[href*=".qertewrt.com/"], :root a[href^="http://45eijvhgj2.com/"], :root a[href^="http://dwn.pushtraffic.net/"], :root iframe[src*="laim.tv/rotator/"], :root a[href*=".trust.zone"], :root a[href*="top.24smi.info"], :root a[href^="http://xtgem.com/click?"], :root a[href^="https://servedbyadbutler.com/"], :root a[href*="//3wr110.xyz/"], :root a[href^="http://www.badoink.com/go.php?"], :root a[href^="http://stateresolver.link/"], :root a[href*="//ridingintractable.com/"], :root a[href*="/adServe/banners?"], :root a[href^="http://www.ducksnetwork.com/"], :root a[href*="/adrotate-out.php?"], :root a[href*="tvkw.ru"], :root a[href^="http://lp.ezdownloadpro.info/"], :root a[href*="/servlet/click/zone?"], :root a[href*="=Adtracker"], :root a[href^="https://rev.adsession.com/"], :root a[href*="=exoclick"], :root a[href*="?adlivk="][href*="&refer="], :root a[href^="http://www.freefilesdownloader.com/"], :root a[href*="ad2upapp.com/"], :root a[href*=".1liveinternet.ru"], :root a[href^="http://mgid.com/"], :root a[href^=" http://ads.ad-center.com/"], :root a[href^="http://data.ad.yieldmanager.net/"], :root a[href^="http://ads.integral-marketing.com/"], :root a[href*="delivery.trafficfabrik.com"], :root a[href*="kinqon.ru"], :root div[class*="-storyBodyAd-"], :root a[href^="https://googleads.g.doubleclick.net/pcs/click"], :root div[class^="ads-partner-"], :root a[href*="googleme.eu"], :root a[href*="mfroute.com/"], :root a[href*="onclkds."], :root a[href^="http://popup.taboola.com/"], :root a[href^="http://4c7og3qcob.com/"], :root a[href*="pussl3.com"], :root a[href^="http://srvpub.com/"], :root a[href^=" http://www.sex.com/"][href*="&utm_"], :root a[href^="http://fileupnow.rocks/"], :root div[role="navigation"] + c-wiz > script + div > .kxhcC, :root a[href^="//00ae8b5a9c1d597.com/"], :root a[href^="http://rekoverr.com/"], :root a[href^="https://uncensored.game/"], :root a[href^="//40ceexln7929.com/"], :root a[href^="//4c7og3qcob.com/"], :root a[href^="//4f6b2af479d337cf.com/"], :root a[href^="//5e1fcb75b6d662d.com/"], :root a[href^="http://go.ad2up.com/"], :root a[href^="//88d7b6aa44fb8eb.com/"], :root a[href^="//adbit.co/?a=Advertise&"], :root a[href^="http://earandmarketing.com/"], :root a[href^="//ads.ad-center.com/"], :root a[href^="//api.ad-goi.com/"], :root a[href^="http://amigodistrib.ru/dkit-hps/"], :root a[href*="ex.24smi.info"], :root a[href^="//awejmp.com/"], :root a[href^="//bwnjijl7w.com/"], :root a[href^="https://www.camsoda.com/enter.php?id="], :root a[href^="//db52cc91beabf7e8.com/"], :root a[href^="//go.onclasrv.com/"], :root a[href^="//go.vedohd.org/"], :root a[href^="//healthaffiliate.center/"], :root #adv_unisound ~ #ad_module_cont > [id^="ad_module"], :root a[href^="//jsmptjmp.com/"], :root a[onmousedown^="this.href='/wp-content/embed-ad-content/"], :root a[href^="//medleyads.com/spot/"], :root a[href^="//nlkdom.com/"], :root a[target="_blank"][href^="http://api.taboola.com/"], :root a[href^="http://hdplugin.flashplayer-updates.com/"], :root a[href^="//oardilin.com/"], :root a[href^="http://www.fpcTraffic2.com/blind/in.cgi?"], :root a[href^="//www.mgid.com/"], :root a[href^="http://www.babylon.com/welcome/index?affID"], :root a[href^="http://www.firstload.de/affiliate/"], :root a[href^="//www.pd-news.com/"], :root a[href^="http://ads.affbuzzads.com/"], :root a[href^="//z6naousb.com/"], :root a[href^="https://fileboom.me/pr/"], :root div[id^="tizerws_"], :root a[href^="//zenhppyad.com/"], :root div[id^="ads250_250-widget"], :root a[href^="http://2pxg8bcf.top/"], :root a[href^="http://internalredirect.site/"], :root a[href^="https://www.share-online.biz/affiliate/"], :root a[href*="advertwebgid.ru"], :root a[href^="http://360ads.go2cloud.org/"], :root a[href^="http://3wr110.net/"], :root a[href^="http://9amq5z4y1y.com/"], :root a[href^="http://www.1clickmoviedownloader.info/"], :root a[href^="http://server.cpmstar.com/click.aspx?poolid="], :root a[href^="http://www.menaon.com/installs/"], :root #PopWin[onmousemove], :root a[href^="http://NowDownloadAll.com"], :root div[id^="drudge-column-ads-"], :root a[href^="http://a.adquantix.com/"], :root div[id^="advads-"], :root a[href*="slovosil.com"], :root a[href^="http://a63t9o1azf.com/"], :root a[href^="http://ad-apac.doubleclick.net/"], :root a[href*="//universalini.info/"], :root a[href^="http://prousa.work/"], :root a[href^="http://fusionads.net"], :root a[href^="http://ad-emea.doubleclick.net/"], :root div[id^="tms-ad-dfp-"], :root a[href^="http://ad.doubleclick.net/"], :root a[href^="https://mk-cdn.net/"], :root a[href^="http://adexprt.me/"], :root a[href^="http://feedads.g.doubleclick.net/"], :root a[href^="http://adf.ly/?id="], :root a[href^="http://api.ringtonematcher.com/"], :root a[href^="http://www.clkads.com/adServe/"], :root a[href^="http://adfarm.mediaplex.com/"], :root a[href^="http://adlev.neodatagroup.com/"], :root a[href^="http://wgpartner.com/"], :root div[id^="ad_bigbox_"], :root a[href^="http://admingame.info/"], :root a[href*="//adoffer.pro/"], :root a[href*="goodtrack.ru"], :root a[href^="http://ads2.williamhill.com/redirect.aspx?"], :root a[href^="http://adprovider.adlure.net/"], :root div[class^="ad_position_"], :root a[href^="http://www.sfippa.com/"], :root a[href^="http://adrunnr.com/"], :root a[href^="http://ads.ad-center.com/"], :root div[id^="div_ad_stack_"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://www.download-provider.org/"], :root div[id^="ad-position-"], :root a[href^="http://ads.expekt.com/affiliates/"], :root a[href*="cpl11.ru"], :root a[href^="https://trackjs.com/?utm_source"], :root a[href^="http://adserver.adreactor.com/"], :root a[href^="http://sharesuper.info/"], :root a[href^="http://adserver.adtech.de/"], :root a[href^="http://www.adxpansion.com"], :root a[href^="http://cdn.adstract.com/"], :root a[href^="http://adserver.adtechus.com/"], :root a[href^="http://adserving.liveuniversenetwork.com/"], :root div[id^="adspot-"], :root iframe[src^="http://cdn1.adexprt.com/"], :root a[href^="http://adserving.unibet.com/"], :root a[href^="http://www.installads.net/"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root a[href^="https://dediseedbox.com/clients/aff.php?"], :root div[class^="da-ya-widget"], :root a[href^="http://adsrv.keycaptcha.com"], :root a[href^="http://clickserv.sitescout.com/"], :root a[href^="https://squren.com/rotator/?atomid="], :root a[href^="http://adtrack123.pl/"], :root a[href^="https://refpaano.host/"], :root a[href^="http://adultfriendfinder.com/p/register.cgi?pid="], :root a[href^="http://aff.ironsocket.com/"], :root div[id^="yandex_ad"], :root a[href^="http://affiliate.coral.co.uk/processing/"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href*="tptrk.ru"], :root a[href*="/kshop3.biz"], :root a[href^="http://azmobilestore.co/"], :root div[class^="largeRectangleAd_"], :root img[width="468"][height="60"], :root a[href^="http://affiliates.score-affiliates.com/"], :root a[href^="http://aflrm.com/"], :root a[href*="bestforexplmdb.com"], :root a[href^="http://www.greenmangaming.com/?tap_a="], :root a[href^="http://www.dealcent.com/register.php?affid="], :root a[href*="trtkp.ru"], :root aside[id^="div-gpt-ad"], :root div[id^="ads300_100-widget"], :root a[href^="http://amzn.to/"] > img[src^="data"], :root a[href^="http://record.betsafe.com/"], :root .base-page_center > .banerTopOver, :root a[href^="http://mojofun.info/"], :root div[id^="admixer_"], :root a[href^="http://anonymous-net.com/"], :root a[href^="http://api.content.ad/"], :root a[href^="http://refpaano.host/"], :root a[href^="http://at.atwola.com/"], :root a[href^="http://bc.vc/?r="], :root a[href*="//yojlf.com"], :root a[href^="http://games.ucoz.ru/"][target="_blank"], :root a[href^="https://www.dsct1.com/"], :root a[href^="http://bcntrack.com/"], :root a[href^="http://bestchickshere.com/"], :root a[href^="https://gghf.mobi/"], :root a[href^="http://www.bet365.com/"][href*="&affiliate="], :root div[class^="da-widget-"], :root a[href^="http://bestorican.com/"], :root a[href^="http://campeeks.com/"][href*="&utm_"], :root a[href^="http://betahit.click/"], :root a[href^="http://bonusfapturbo.nmvsite.com/"], :root a[href^="http://www.downloadthesefiles.com/"], :root a[href^="http://bs.serving-sys.com/"], :root a[href^="http://c.actiondesk.com/"], :root a[href*="octoclick.net"], :root a[href^="http://campaign.bharatmatrimony.com/cbstrack/"], :root a[href^="https://flirtaescopa.com/"], :root a[href^="http://campaign.bharatmatrimony.com/track/"], :root a[href^="http://casino-x.com/?partner"], :root [id^="relap-custom-iframe-rec"], :root a[href^="http://secure.signup-page.com/"], :root a[href^="http://lp.ilivid.com/"], :root a[href^="http://cdn.adsrvmedia.net/"], :root a[href^="http://www.accuserveadsystem.com/accuserve-go.php?"], :root a[href^="http://click.payserve.com/"], :root a[href^="http://cdn3.adbrau.com/"], :root a[href^="http://t.mdn2015x2.com/"], :root a[href^="http://centertrust.xyz/"], :root a[style="display:block;width:300px;min-height:250px"][href^="http://li.cnet.com/click?"], :root a[href*="twtn.ru/"], :root a[href^="http://chaturbate.com/affiliates/"], :root [title="uCoz Counter"], :root a[href^="http://ethfw0370q.com/"], :root a[href^="http://click.guamwnvgashbkashawhgkhahshmashcas.pw/"], :root div[id^="ads300_600-widget"], :root a[href^="http://click.plista.com/pets"], :root a[href*="zdravo-med.ru"], :root a[href^="http://clicks.guamwnvgashbkashawhgkhahshmashcas.pw/"], :root a[href^="http://www.hitcpm.com/"], :root a[href^="http://clk.directrev.com/"], :root a[href*="/onvix.me/promo/"][target=_blank], :root a[href^="http://clkmon.com/adServe/"], :root a[href^="http://connectlinking6.com/"], :root a[href^="http://contractallsticker.net/"], :root a[href^="http://cpaway.afftrack.com/"], :root a[href^="http://onclickads.net/"], :root a[href^="http://cwcams.com/landing/click/"], :root a[href^="http://d2.zedo.com/"], :root a[href^="https://adhealers.com/"], :root a[href^="http://data.committeemenencyclopedicrepertory.info/"], :root a[href^="https://ad.atdmt.com/"], :root a[href^="http://www.fonts.com/BannerScript/"], :root a[href*="https://relap.io/r?"], :root a[href^="http://data.linoleictanzaniatitanic.com/"], :root a[href^="http://trk.mdrtrck.com/"], :root a[href^="http://databass.info/"], :root div[id*="Teaser_Block"], :root a[href^="http://dftrck.com/"], :root div[id^="ad-gpt-"], :root a[href^="http://down1oads.com/"], :root a[href^="http://www.torntvdl.com/"], :root input[onclick^="window.open('http://www.friendlyduck.com/"], :root a[href^="http://download-performance.com/"], :root a[href^="http://duckcash.eu/"], :root a[href^="http://eclkmpsa.com/"], :root a[href^="http://elite-sex-finder.com/?"], :root a[href^="http://www.downloadplayer1.com/"], :root a[href^="http://elitefuckbook.com/"], :root div[class^="mixadvert"], :root a[href^="http://espn.zlbu.net/"], :root a[href^="http://extra.bet365.com/"][href*="?affiliate="], :root a[href*="lifebloggersz.ru"], :root a[href^="http://t.wowtrk.com/"], :root a[href^="http://feeds1.validclick.com/"], :root a[href^="https://lingthatsparleso.info/"], :root a[href^="http://ffxitrack.com/"], :root a[href^="http://finaljuyu.com/"], :root a[href^="http://findersocket.com/"], :root a[href^="http://go.mobisla.com/"], :root a[href^="http://freesoftwarelive.com/"], :root a[href^="http://g1.v.fwmrm.net/ad/"], :root a[href^="https://www.incontri-matura.com/"], :root a[href^="http://t.mdn2015x1.com/"], :root a[href^="http://galleries.pinballpublishernetwork.com/"], :root iframe[id^="google_ads_iframe"], :root a[href^="http://galleries.securewebsiteaccess.com/"], :root a[href^="http://www.affiliates1128.com/processing/"], :root a[href*="/clubleads.ru"], :root a[href^="http://gca.sh/user/register?ref="], :root a[href^="http://getlinksinaseconds.com/"], :root a[href^="http://go.seomojo.com/tracking202/"], :root a[href^="http://go.trafficshop.com/"], :root a[href^="http://googleads.g.doubleclick.net/pcs/click"], :root img[alt^="Fuckbook"], :root a[href^="http://green.trafficinvest.com/"], :root a[href^="http://promos.bwin.com/"], :root a[href^="https://gamescarousel.com/"], :root a[href^="http://greensmoke.com/"], :root a[href^="http://n.admagnet.net/"], :root a[href^="http://guideways.info/"], :root a[href^="http://www.coinducks.com/"], :root a[href^="http://hpn.houzz.com/"], :root a[href^="http://play4k.co/"], :root a[href*="katuhus.com"], :root a[href^="http://hyperies.info/"], :root a[href^="http://imads.integral-marketing.com/"], :root div[id^="ADV-SLOT-"], :root a[href^="http://install.securewebsiteaccess.com/"], :root a[href^="http://www.sex.com/?utm_"], :root a[href^="http://istri.it/?"], :root a[href^="https://go.trkclick2.com/"], :root a[href^="http://join3.bannedsextapes.com/track/"], :root a[href^="http://k2s.cc/code/"], :root a[href^="http://www.yourfuckbook.com/?"], :root a[href*="kma1.biz"], :root a[href^="http://latestdownloads.net/download.php?"], :root [href*="/vaigowoa.com"], :root a[href^="http://linksnappy.com/?ref="], :root a[href^="http://liversely.net/"], :root a[href^="http://www.tirerack.com/affiliates/"], :root a[href^="https://chaturbate.jjgirls.com/"][href*="?tour="], :root a[href^="http://marketgid.com"], :root a[href^="https://www.financeads.net/tc.php?"], :root .content__right > .z-market_right_yes, :root a[href^="http://www.idownloadplay.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="http://mo8mwxi1.com/"], :root a[href^="http://www.flashx.tv/downloadthis"], :root a[href^="http://online.ladbrokes.com/promoRedirect?"], :root a[href^="http://pan.adraccoon.com?"], :root div[class^="ResponsiveAd-"], :root a[href*="//do-rod.com/"], :root a[href^="http://papi.mynativeplatform.com:80/pub2/"], :root a[href^="http://www.graboid.com/affiliates/"], :root a[href^="http://partner.sbaffiliates.com/"], :root a[href^="http://serve.williamhill.com/promoRedirect?"], :root div[class^="pane-google-admanager-"], :root a[href^="http://prochina.link/"], :root a[href*="shakescash.com"], :root a[href^="http://www.1clickdownloader.com/"], :root a[href^="http://prochina.space/"], :root a[href^="http://pubads.g.doubleclick.net/"], :root a[href*="sviruniversal.com/"], :root div[class^="Ad__bigBox"], :root a[href^="http://www.brightwheel.info/"], :root a[href^="http://pwrads.net/"], :root a[href^="http://refer.webhostingbuzz.com/"], :root a[href*="lifenews24x7.ru"], :root a[href^="http://tezfiles.com/pr/"], :root a[href^="https://track.trkinator.com/"], :root a[href^="http://s5prou7ulr.com/"], :root a[href^="http://kshop.biz/"], :root a[href^="http://searchtabnew.com/"], :root body > iframe[style^="position"][style*="fixed"][id^="iFb"][src^="/?"], :root a[href^="http://secure.cbdpure.com/aff/"], :root a[href^="http://secure.hostgator.com/~affiliat/"], :root a[href^="http://webgirlz.online/landing/"], :root a[href^="http://see-work.info/"], :root div[data-mediatype="advertising"], :root a[href^="http://servicegetbook.net/"], :root a[href^="http://spygasm.com/track?"], :root a[href^="http://steel.starflavor.bid/"], :root a[href^="http://syndication.exoclick.com/"], :root a[href^="https://dcs.adgear.com/clicks/"], :root a[href^="http://t.mdn2015x3.com/"], :root a[href^="https://track.healthtrader.com/"], :root a[href*="//ubar-pro"], :root a[href^="http://tour.affbuzzads.com/"], :root div[id^="criteo-"][style], :root div[id^="traffim-widget"], :root a[href^="https://adclick.g.doubleclick.net/"], :root a[href^="http://track.adform.net/"], :root .mywidget__col > .mywidget__link_advert, :root a[href^="http://track.affiliatenetwork.co.za/"], :root a[href^="http://tracker.mybroadband.co.za/"], :root a[href*="/uni-lnk.com/"], :root a[href^="http://tracking.crazylead.com/"], :root div[data-spotim-slot], :root div[class^="ad_border_"], :root a[href^="http://www.friendlyquacks.com/"], :root a[href*="please-direct.me"], :root a[href^="http://tracking.deltamediallc.com/"], :root .base-page_container > .banerRight, :root a[href^="http://tracking.toroadvertising.com/"], :root a[href^="http://traffic.tc-clicks.com/"], :root a[href^="http://www.firstload.com/affiliate/"], :root a[href^="http://us.marketgid.com"], :root a[href^="https://go.stripchat.com/"][href*="&campaignId="], :root a[href^="http://vinfdv6b4j.com/"], :root a[href^="http://browserload.info/"], :root a[href*="beauty-list.ru"], :root a[href^="http://webtrackerplus.com/"], :root a[href^="http://wopertific.info/"], :root a[href^="http://www.123-reg.co.uk/affiliate2.cgi"], :root a[href^="http://www.TwinPlan.com/AF_"], :root a[href^="http://www.bitlord.me/share/"], :root a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"], :root div[data-subscript="Advertising"], :root a[href^="http://www.afco2go.com/srv.php?"], :root div > [class][onclick*=".updateAnalyticsEvents"], :root a[href^="http://www.afgr2.com/"], :root a[href^="http://www.afgr3.com/"], :root a[href^="http://www.amazon.co.uk/exec/obidos/external-search?"], :root a[href^="http://www.cash-duck.com/"], :root div[id^="advads_"], :root a[href^="https://chaturbate.com/in/?track="], :root a[href^="https://secure.cbdpure.com/aff/"], :root a[href^="http://www.clickansave.net/"], :root a[href^="http://www.dl-provider.com/search/"], :root a[href^="http://www.duckssolutions.com/"], :root a[href^="http://www.down1oads.com/"], :root div[id^="div-ads-"], :root a[href^="http://www.downloadweb.org/"], :root a[href^="http://www.duckcash.eu/"], :root a[href^="http://www.quick-torrent.com/download.html?aff"], :root a[href^="http://www.firstclass-download.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"], :root a[href^="http://www.gamebookers.com/cgi-bin/intro.cgi?"], :root a[href^="http://www.on2url.com/app/adtrack.asp"], :root a[href^="http://www.incredimail.com/?id="], :root a[onclick*="/link-fes.ru"], :root a[href^="http://www.zergnet.com/i/"], :root a[href^="http://www.ireel.com/signup?ref"], :root a[href^="http://www.linkbucks.com/referral/"], :root a[href^="http://www.liutilities.com/"], :root iframe[id^="google_ads_frame"], :root a[href^="http://www.mobileandinternetadvertising.com/"], :root a[href^="https://awejmp.com/"], :root a[href^="http://www.myfreecams.com/?co_id="][href*="&track="], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="http://www.myfreepaysite.com/sfw_int.php?aid"], :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.sex.com/videos/?utm_"], :root a[href^="http://www.mysuperpharm.com/"], :root a[href^="http://www.myvpn.pro/"], :root a[href^="http://www.pheedo.com/"], :root a[href^="https://trafficmedia.center/"], :root a[href^="http://www.pinkvisualgames.com/?revid="], :root a[href^="http://www.pinkvisualpad.com/?revid="], :root a[href^="http://www.plus500.com/?id="], :root a[href^="http://www.ragazzeinvendita.com/?rcid="], :root a[href^="http://www.revenuehits.com/"], :root a[href^="http://www.richducks.com/"], :root div[class*="td-a-rec-id-"], :root a[href*="medicalblogs.ru"], :root a[href^="http://www.roboform.com/php/land.php"], :root a[href^="https://dltags.com/"], :root a[href^="http://www.securegfm.com/"], :root a[href^="http://www.seekbang.com/cs/"], :root a[href^="http://www.sex.com/pics/?utm_"], :root a[href^="https://zononi.com/"], :root a[href^="http://www.sexgangsters.com/?pid="], :root a[href^="http://www.socialsex.com/"], :root a[href^="http://www.streamate.com/exports/"], :root a[href*="please-direct.com"], :root a[href^="http://www.text-link-ads.com/"], :root a[href*="feellights.ru"], :root a[href^="http://www.torntv-downloader.com/"], :root a[href^="http://www.twinplan.com/AF_"], :root a[href^="http://www.urmediazone.com/signup"], :root a[href^="https://porndeals.com/?track="], :root a[href^="http://www.wantstraffic.com/"], :root a[href^="http://www.webtrackerplus.com/"], :root a[href^="http://www.xmediaserve.com/"], :root a[href^="http://www1.clickdownloader.com/"], :root a[href^="http://www5.smartadserver.com/call/pubjumpi/"], :root a[href*="/vkout.ru"], :root a[href^="http://wxdownloadmanager.com/dl/"], :root .stat_pixel_yes[onclick][class*="_layout_"][class*="_format_"], :root a[href^="http://y1jxiqds7v.com/"], :root a[href^="http://yads.zedo.com/"], :root a[href^="http://z1.zedo.com/"], :root div[id^="ad-server-"], :root a[href^="http://trafmaster.com"], :root a[href^="http://zevera.com/afi.html"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://aaucwbe.com/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://ads.ad4game.com/"], :root a[href^="https://ads.trafficpoizon.com/"], :root a[href^="https://adserver.adreactor.com/"], :root a[href^="https://adultfriendfinder.com/go/page/landing"], :root a[href^="https://adswick.com/"], :root a[href^="https://affiliates.bet-at-home.com/processing/"], :root a[href^="https://atomidownload.com/"], :root a[href^="https://vodexor.us/"], :root a[href^="https://awentw.com/"], :root a[href^="https://badoinkvr.com/"], :root a[href^="https://betway.com/"][href*="&a="], :root a[href^="https://bongacams2.com/track?"], :root a[href^="https://bs.serving-sys.com"], :root a[href^="http://click.hotlog.ru/"], :root a[href^="https://bullads.net/get/"], :root a[href*="go.ad2up.com"], :root a[href^="https://chaturbate.com/affiliates/"], :root a[href^="https://chaturbate.com/in/?tour="], :root a[href^="https://chaturbate.xyz/"], :root a[href^="https://click.plista.com/pets"], :root a[href^="https://clixtrac.com/"], :root [onclick*="/sb/clk/"], :root a[href^="https://control.trafficfabrik.com/"], :root a[href^="https://djtcollectorclub.org/"][href*="?affiliate_id="], :root a[href^="https://evaporate.pw/"], :root a[href^="https://farm.plista.com/pets"], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href^="https://freeadult.games/"], :root a[href^="https://go.ad2up.com/"], :root a[href^="https://go.onclasrv.com/"], :root a[href^="https://iac.ampxdirect.com/"], :root a[href^="https://iactrivago.ampxdirect.com/"], :root a[href^="https://land.rk.com/landing/"], :root a[href*=".twkv.ru"], :root a[href^="https://landing1.brazzersnetwork.com"], :root a[href^="https://m.do.co/c/"] > img, :root a[href^="https://members.linkifier.com/public/affiliateLanding?refCode="], :root a[href^="https://playuhd.host/"], :root a[href^="https://porngames.adult/?SID="], :root a[href^="https://redirect.ero-advertising.com/"], :root a[href^="https://secure.bstlnk.com/"], :root a[href^="https://retiremely.com/"], :root a[href^="https://understandsolar.com/signup/?lead_source="][href*="&tracking_code="], :root a[href^="https://secure.adnxs.com/clktrb?"], :root div[id^="ad-cid-"], :root a[href^="https://secure.eveonline.com/ft/?aid="], :root a[href*="/advjump.com"], :root a[href^="https://spygasm.com/track?"], :root a[href^="https://syndication.exoclick.com/splash.php?"], :root div[id^="news_nest_msk_ru"], :root a[href^="https://topoffers.com/"][href*="/?pid="], :root a[href^="https://torguard.net/aff.php"], :root a[href^="https://track.52zxzh.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="https://track.clickmoi.xyz/"], :root a[href^="https://traffic.bannerator.com/"], :root div[itemtype="http://schema.org/WPAdBlock"], :root a[href^="https://transfer.xe.com/signup/track/redirect?"], :root a[href^="https://trklvs.com/"], :root a[href*="beststbuy.ru"], :root a[href^="https://trust.zone/go/r.php?RID="], :root a[href^="https://watchmygirlfriend.tv/"], :root a[href*="litewebbusiness.com"], :root a[href^="https://windscribe.com/promo/"], :root a[href^="https://www.adskeeper.co.uk/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://www.bebi.com"], :root a[href^="https://www.camyou.com/?cam="][href*="&track="], :root a[href*="re-directme.com"], :root a[href^="https://www.friendlyduck.com/AF_"], :root a[href*="offhealth.ru"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root .serp-list_left_yes[aria-label="Результаты поиска"] > .t-construct-adapter__adv, :root a[href^="https://www.moscarossa.biz/"], :root a[href^="http://luckiestclick.com/goto."], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.oboom.com/ad/"], :root a[href^="https://www.popads.net/users/"], :root a[href^="https://www.pornhat.com/"][rel="nofollow"], :root a[onclick*="n284adserv.com"], :root a[href*="media-rotate.com"], :root a[href^="https://www.spyoff.com/"], :root a[onclick*="//m.economictimes.com/etmack/click.htm"], :root a[href*="mixadvert.com"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root aside[id^="tn_ads_widget-"], :root bottomadblock, :root div[class$="dealnews"] > .dealnews, :root div[class^="BlockAdvert-"], :root a[href*="cpagetti1.com"], :root div[class*="_AdInArticle_"], :root div[class^="Ad__adContainer"], :root div[class^="Ad__container"], :root div[class^="AdhesionAd_"], :root div[class^="adbanner_"], :root [id^="newPortal_informer_"], :root div[class^="adpubs-"], :root a[href*="ftpglst.com"], :root div[class^="awpcp-random-ads"], :root div[class^="backfill-taboola-home-slot-"], :root a[href*="tvroff.net"], :root a[onclick*="trtkp.ru"], :root div[class^="gemini-ad"], :root div[class^="index_adAfterContent_"], :root .header-banner > #moneyback[target="_blank"], :root div[class^="index_adBeforeContent_"], :root div[id^="cns_ads_"], :root div[class^="index_displayAd_"], :root div[class^="local-feed-banner-ads"], :root div[class^="proadszone-"], :root div[data-ad-underplayer], :root div[data-native_ad], :root a[href*="blogers-story.ru"], :root div[id^="YFBMSN"], :root div[id^="acm-ad-tag-"], :root div[id^="ad-div-"], :root div[id^="adfox_"], :root div[id^="adrotate_widgets-"], :root a[href*="/universal-lnk.net/"], :root div[id^="ads300_250-widget"], :root div[id^="advt-"], :root div[id^="block-views-topheader-ad-block-"], :root div[id^="crt-"][style], :root div[id^="dfp-slot-"], :root div[id^="M"][id*="Composite"], :root a[href*="rapidtor.ru/sb/clk/"], :root div[id^="google_ads_iframe_"], :root div[id^="google_dfp_"], :root div[id^="lazyad-"], :root a[href*="/installpack.net"], :root [data-link*="amigo-browser.ru/dkit-"], :root div[id^="proadszone-"], :root [href*="pigiuqproxy.com"], :root div[id^="q1-adset-"], :root div[style="width: 252px; height: 450px; position: fixed; right: 0px; top: 0px; overflow: hidden; z-index: 10000;"], :root div[id^="zergnet-widget"], :root a[href*="//reruniversal.com/"], :root div[itemtype="http://www.schema.org/WPAdBlock"], :root topadblock, :root div[role="navigation"] + c-wiz > div > .kxhcC, :root header#hdr + #main > div[data-hveid], :root iframe[src^="http://cdn2.adexprt.com/"], :root input[onclick^="window.open('http://www.FriendlyDuck.com/"], :root p[id^="div-gpt-ad-"], :root a[href*="refpazus.top"], :root a[href*="tvks.ru"], :root script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content, :root #BlWrapper > .b-temp_rbc, :root .base-page_center > .banerBottom, :root .base-page_center > .banerTop, :root [href*="/uni-tds.com/"], :root [href*="/zfvklk.ru"], :root [href*="driftawayforfun.com"], :root [onclick*=".twkv.ru"], :root div[id^="gnezdo_ru_"], :root a[href*="amigo-biz.ru/ads/click"], :root [onclick*="mixadvert.com"], :root a[href*=".pokupkins.ru"], :root a[href*="fortedrow.pro"], :root a[href*="//ubar-pro.ru"], :root a[href*="//ubar.pro"], :root a[href*="//universalice.info/"], :root a[href*="//universalie.info/"], :root a[href*="//universalin.info/"], :root a[href*="//universalut.info/"], :root a[href*="sandratand.ru"], :root a[href*="//viruniversal.com/"], :root a[href*="/advertisesimple.info"], :root a[href*="/afftraf.co/"], :root a[href*="/amigo-browser.ru"][target="_blank"], :root a[href*="/ber-ter.com"], :root a[href*="/fastvk.com"], :root a[href*="/get-torrent.ru"], :root a[href*="films.ws"], :root a[href*="/mosday.ru/ad/"], :root a[href*="/myuniversalnk.com/"], :root a[href*="/myuniversalnk.net/"], :root a[href*="/ogclick.com/api/redirect"], :root a[href*="/onvix.co/promo/"][target=_blank], :root a[href*="/onvix.tv/promo/"][target=_blank], :root a[href*="/ribnadzo.ru"], :root a[href*="tdstrk.ru"], :root a[href*="shakesclick.com"], :root a[href*="/rlink/simptizer/"], :root a[href*="/u-load.ru/"], :root a[href*="/u-loads.ru/"], :root a[href*="/universalsrc.net/"], :root a[href*="/yfiles1.ru"], :root a[href*="admitlead."][href*="/sb/clk/"], :root a[href*="ads2-adnow.com"], :root a[href*="amgfile.ru"], :root a[href*="awesomeredirector"], :root a[href*="best-zdorovye.ru"], :root a[href*="gpclick.ru"], :root a[href*="best-zdrav.ru"], :root a[href*="bgrndi.com"], :root a[href*="blogi-novosti.ru"], :root a[href*="bubblesmedia.ru/sb/clk/"], :root a[href*="cmsmodnews.com"], :root a[href*="dugfoto.ru"], :root a[href*="filebase.me"], :root a[href*="flylinks.pw"], :root a[href*="intovarro.ru"], :root a[href*="gocdn.ru"], :root a[href*="goext.info"], :root a[href*="sapmedia.ru"], :root a[href*="herrabjec.pro"], :root a[href*="idealmedia.io"], :root a[href*="info-blog24.ru"], :root a[href*="joycasino.com/?partner="], :root a[href*="kodielinktrust.ru"], :root a[href^="https://kshop"][href*=".pro/"], :root a[href*="kshop2.biz"], :root a[href^="http://traderstart.mirtesen.ru"], :root a[href*="land-gooods.ru"], :root a[href*="linkmyc.com"], :root a[href*="m1cpl.ru"] { display: none !important; }
+:root a[href*="marketgid.com/"], :root a[href*="navaxudoru.com"], :root a[href*="netcrys.com"], :root a[href*="problogrus.ru"], :root a[href*="realgoodies.ru"], :root a[href*="retagapp.com"], :root a[href*="shakesin.com"], :root a[href*="shakespoint.com"], :root a[href*="thor-media.ru/click/"], :root a[href*="top-info24.ru"], :root a[href*="trafgid.xyz"], :root a[href*="trk-1.com"], :root a[href^="http://eaplay.ru/"], :root a[href*="trklp.ru"], :root a[href*="turbotraf.com"], :root a[href*="ultrabit.ws"], :root a[href*="webdiana.ru/click"], :root a[href^="http://apytrc.com/click/"], :root a[href^="http://datxxx.com"], :root a[href^="http://fly-shops.ru"], :root a[href^="http://glprt.ru/affiliate/"], :root a[href^="http://olivka.biz/"], :root a[href^="http://putanapartners.com/go."], :root a[href^="http://tds-2.ru"], :root a[href^="https://homyanus.com"], :root a[href^="https://msetup.pro"], :root a[onclick*="offergate-amigo"], :root div[class*="relap"][class*="-rec-item"], :root div[class*="spklw"][data-type="ad"], :root div[class^="block_fortress"], :root div[data-id^="div-gpt-ad-"], :root div[id^="CGCandy"], :root div[id^="DIV_DA_"], :root div[id^="advertur_"], :root div[id^="b_tz_"], :root div[id^="beroll_rotator"], :root div[id^="cpa_rotator_block"], :root div[id^="join_informer_"], :root div[id^="news_2xclick_ru_"], :root div[id^="rtn4p"], :root div[id^="sblock_inform_"], :root div[id^="smi2adblock_"], :root div[style*="am15.net/img/player_skins"], :root iframe[id^="republer"], :root iframe[src*="/3647.tech"], :root iframe[src*="/mixadv_"], :root iframe[src*="ads.exosrv.com"], :root iframe[src*="marketgid.com"], :root iframe[src*="traffic-media.co"], :root iframe[src*="trafic-media.ru"], :root iframe[src*="utraff.com"], :root img[width="120"][height="600"], :root img[width="160"][height="600"], :root img[width="728"][height="90"], :root noindex > .search_result[class*="search_result_"], :root object[data*="ads.com/clk.swf"], :root .i-bem.b-timetable__row[onclick*="awaps"], :root .serp-list + .serp-list > .serp-adv__head, :root .serp-list + .serp-list > .serp-adv__head ~ .serp-item, :root div[id^="yandex_rtb"], :root body > div[id^="dV"][style^="width"][style*="height"][style*="position"][style*="fixed"][style*="overflow"][style*="z-index"][style*="background"], :root .min-width-normal > #popup_container ~ #fade, :root [alt="Rambler's Top100"], :root a#mobtop[title="Рейтинг мобильных сайтов"], :root a[href*="//top.mail.ru/jump?"], :root a[href^="http://hitcounter.ru/top/stat.php"], :root img[src*="top.mail.ru/counter?"], :root img[src^="/stat/"][width="88"][height="31"] { display: none !important; }</style><style>.apttool-container{display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 9999999999}.apttool-container iframe{position: absolute; top: 0; left: 0; width: 1px; min-width: 100%; height: 100%; z-index: 1001}</style><link rel="stylesheet" type="text/css" href="./ville10_files/animate.min(1).css"></head>
+
+
+<body class="home page-template page-template-templates page-template-home page-template-templateshome-php page page-id-672 slides scroll animateOnScroll ifpb-banner-links lastSlide stage-5" style="display: block;"><div id="apttool-container-floor-plans" class="apttool-container" style=""></div>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TWS37TZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- SVG Library -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  
+  <symbol id="logo" viewBox="0 0 106 31"><title>Brand Name</title><path d="M17.413 14.04c-.56-5.84-5.6-7-8.52-7-4.6 0-8.6 2.92-8.6 7.52 0 3 2.4 4.88 5.28 5.8 4.24 1.64 5.88 1.84 5.88 3.36 0 1.08-1.2 1.72-2.32 1.72-.28 0-2.24 0-2.52-2.04h-6.6c.6 5.84 5.68 7.36 9.04 7.36 4.92 0 9.04-2.88 9.04-7.76 0-4.8-4-5.92-7.76-6.96-1.76-.52-3.4-1.2-3.4-2.2 0-.6.48-1.48 1.88-1.48 1.96 0 2.04 1.2 2.08 1.68h6.52zm2.222 15.96h6.64v-29.6h-6.64v29.6zm9.662-24.56h6.64v-5.04h-6.64v5.04zm0 24.56h6.64v-22.2h-6.64v22.2zm32.782-29.6h-6.64v9.28c-.72-.72-2.6-2.64-6.52-2.64-5.64 0-11 4.28-11 11.8 0 6.68 4.4 11.88 11.12 11.88 4.48 0 6.08-2.2 6.72-3.12v2.4h6.32v-29.6zm-17.52 18.4c0-2.56 1.8-5.56 5.64-5.56 1.56 0 2.96.56 3.96 1.56 1 .96 1.64 2.32 1.64 3.92.08 1.64-.52 3.08-1.56 4.12s-2.52 1.68-4.12 1.68c-3.12 0-5.56-2.28-5.56-5.68v-.04zm42.502 2.4c.52-4.08-.32-7.64-3.12-10.64-2.08-2.2-5-3.52-8.4-3.52-6.76 0-11.64 5.72-11.64 11.92 0 6.6 5.4 11.76 11.76 11.76 2.28 0 4.48-.68 6.32-2 1.88-1.28 3.44-3.2 4.52-5.68h-6.8c-.8 1.16-1.92 2.08-4.04 2.08-2.6 0-4.84-1.56-5.12-3.92h16.52zm-16.44-5.04c.16-1.04 1.52-3.52 4.96-3.52s4.8 2.48 4.96 3.52h-9.92zm34.502-2.12c-.56-5.84-5.6-7-8.52-7-4.6 0-8.6 2.92-8.6 7.52 0 3 2.4 4.88 5.28 5.8 4.24 1.64 5.88 1.84 5.88 3.36 0 1.08-1.2 1.72-2.32 1.72-.28 0-2.24 0-2.52-2.04h-6.6c.6 5.84 5.68 7.36 9.04 7.36 4.92 0 9.04-2.88 9.04-7.76 0-4.8-4-5.92-7.76-6.96-1.76-.52-3.4-1.2-3.4-2.2 0-.6.48-1.48 1.88-1.48 1.96 0 2.04 1.2 2.08 1.68h6.52z"></path></symbol>
+  
+  <symbol id="logo-icon" viewBox="0 0 50 41"><title>Brand Name</title><path d="M4,12h42c2.2,0,4,1.8,4,4v21c0,2.2-1.8,4-4,4H4c-2.2,0-4-1.8-4-4V16C0,13.8,1.8,12,4,12z"></path><path opacity="0.6" d="M45.5,9h-41C3.7,9,3,8.3,3,7.5v0C3,6.7,3.7,6,4.5,6h41C46.3,6,47,6.7,47,7.5v0C47,8.3,46.3,9,45.5,9z"></path><path opacity="0.4" d="M7.5,0h35C43.3,0,44,0.7,44,1.5v0C44,2.3,43.3,3,42.5,3h-35C6.7,3,6,2.3,6,1.5v0C6,0.7,6.7,0,7.5,0z"></path></symbol>
+  
+  <symbol id="close" viewBox="0 0 30 30"><path d="M15 0c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm5.7 19.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-4.3-4.3-4.3 4.3c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-1 0-1.4l4.3-4.3-4.3-4.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l4.3 4.3 4.3-4.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-4.3 4.3 4.3 4.3z"></path></symbol>
+  
+  <symbol id="close-small" viewBox="0 0 11 11"><path d="M6.914 5.5l3.793-3.793c.391-.391.391-1.023 0-1.414s-1.023-.391-1.414 0l-3.793 3.793-3.793-3.793c-.391-.391-1.023-.391-1.414 0s-.391 1.023 0 1.414l3.793 3.793-3.793 3.793c-.391.391-.391 1.023 0 1.414.195.195.451.293.707.293s.512-.098.707-.293l3.793-3.793 3.793 3.793c.195.195.451.293.707.293s.512-.098.707-.293c.391-.391.391-1.023 0-1.414l-3.793-3.793z"></path></symbol>
+
+  <symbol id="arrow-left" viewBox="0 0 31 72"><path d="M30 72c-.3 0-.6-.1-.8-.4l-29-34c-.3-.4-.3-.9 0-1.3l29-36c.3-.4 1-.5 1.4-.2.4.3.5 1 .2 1.4l-28.5 35.5 28.5 33.4c.4.4.3 1.1-.1 1.4-.2.1-.5.2-.7.2z"></path></symbol>
+  
+  <symbol id="arrow-right" viewBox="0 0 31 72"><path d="M1 0c.3 0 .6.1.8.4l29 34c.3.4.3.9 0 1.3l-29 36c-.3.4-1 .5-1.4.2-.4-.3-.5-1-.2-1.4l28.5-35.5-28.5-33.4c-.4-.4-.3-1.1.1-1.4.2-.1.5-.2.7-.2z"></path></symbol>
+  
+  <symbol id="back" viewBox="0 0 20 20"><path d="M2.3 10.7l5 5c.4.4 1 .4 1.4 0s.4-1 0-1.4l-3.3-3.3h11.6c.6 0 1-.4 1-1s-.4-1-1-1h-11.6l3.3-3.3c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3s-.5.1-.7.3l-5 5c-.2.2-.3.5-.3.7 0 .2.1.5.3.7z"></path></symbol>
+  
+  <symbol id="menu" viewBox="0 0 22 22"><path d="M1 5h20c.6 0 1-.4 1-1s-.4-1-1-1h-20c-.6 0-1 .4-1 1s.4 1 1 1zm20 5h-20c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1zm0 7h-20c-.6 0-1 .4-1 1s.4 1 1 1h20c.6 0 1-.4 1-1s-.4-1-1-1z"></path></symbol>
+  
+  <symbol id="share" viewBox="0 0 22 22"><path d="M21 10c-.6 0-1 .4-1 1v7h-18v-7c0-.6-.4-1-1-1s-1 .4-1 1v7c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-7c0-.6-.4-1-1-1zM5.5 7.5c.3 0 .5-.1.7-.3l3.8-3.8v9.6c0 .6.4 1 1 1s1-.4 1-1v-9.6l3.8 3.8c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4l-5.5-5.5c-.1-.1-.2-.2-.3-.2-.2-.1-.5-.1-.8 0l-.3.2-5.5 5.5c-.4.4-.4 1 0 1.4.2.2.4.3.7.3z"></path></symbol>
+  
+  <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 18c-.2 0-.5-.1-.7-.3l-11-10c-.4-.4-.4-1-.1-1.4.4-.4 1-.4 1.4-.1l10.4 9.4 10.3-9.4c.4-.4 1-.3 1.4.1.4.4.3 1-.1 1.4l-11 10c-.1.2-.4.3-.6.3z"></path></symbol>
+  
+  <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M11.9 5.9c.2 0 .5.1.7.3l11 10c.4.4.4 1 .1 1.4-.4.4-1 .4-1.4.1l-10.4-9.4-10.3 9.4c-.4.4-1 .3-1.4-.1-.4-.4-.3-1 .1-1.4l11-10c.1-.2.4-.3.6-.3z"></path></symbol>
+  
+  <symbol id="arrow-top" viewBox="0 0 24 24"><path d="M20.7 10.3l-8-8c-.4-.4-1-.4-1.4 0l-8 8c-.4.4-.4 1 0 1.4s1 .4 1.4 0l6.3-6.3v15.6c0 .6.4 1 1 1s1-.4 1-1v-15.6l6.3 6.3c.2.2.5.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4z"></path></symbol>
+
+  <symbol id="drop-down" viewBox="0 0 16 16"><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="1,5 8,12 15,5" fill="none"></polyline></symbol>
+  
+  <symbol id="play" viewBox="0 0 30 30"><path d="M7 30v-30l22 15z"></path></symbol>
+  
+  <symbol id="login" viewBox="0 0 22 22"><path d="M13 2c0 .6.4 1 1 1h6v16h-6c-.6 0-1 .4-1 1s.4 1 1 1h6c1.1 0 2-.9 2-2v-16c0-1.1-.9-2-2-2h-6c-.6 0-1 .4-1 1zm-6.5 3.5c0 .3.1.5.3.7l3.8 3.8h-9.6c-.6 0-1 .4-1 1s.4 1 1 1h9.6l-3.8 3.8c-.2.2-.3.5-.3.7s.1.5.3.7c.4.4 1 .4 1.4 0l5.5-5.5c.1-.1.2-.2.2-.3.1-.2.1-.5 0-.8l-.2-.3-5.5-5.5c-.4-.4-1-.4-1.4 0-.2.2-.3.4-.3.7z"></path></symbol>
+  
+  <symbol id="chat" viewBox="0 0 22 22"><path d="M11 22c-.1 0-.3 0-.4-.1-.4-.1-.6-.5-.6-.9v-4h-7.8c-1.2 0-2.2-1-2.2-2.2v-11.6c0-1.2 1-2.2 2.2-2.2h17.7c1.1 0 2.1 1 2.1 2.2v11.7c0 1.2-1 2.2-2.2 2.2h-3.4l-4.7 4.7c-.2.1-.4.2-.7.2zm-8.8-19c-.1 0-.2.1-.2.2v11.7s.1.1.2.1h8.8c.6 0 1 .4 1 1v2.6l3.3-3.3c.2-.2.4-.3.7-.3h3.8c.1 0 .2-.1.2-.2v-11.6c0-.1-.1-.2-.2-.2h-17.6zM5 6h6v2h-6zM5 10h10v2h-10z"></path></symbol>
+  
+  <symbol id="mail" viewBox="0 0 22 22"><path d="M19.8 2h-17.6c-1.2 0-2.2 1-2.2 2.2v13.5c0 1.3 1 2.3 2.2 2.3h17.5c1.2 0 2.2-1 2.2-2.2v-13.6c.1-1.2-.9-2.2-2.1-2.2zm-17.6 2h17.5c.2 0 .3.1.3.2v.3l-9 6.3-9-6.3v-.3c0-.1.1-.2.2-.2zm17.6 14h-17.6c-.1 0-.2-.1-.2-.2v-10.9l8.1 5.7c.3.2.6.3.9.3.3 0 .6-.1.9-.3l8.1-5.7v10.9c0 .1-.1.2-.2.2z"></path></symbol>
+
+  <symbol id="sound-on" viewBox="0 0 22 22"><path d="M15 15c-.2 0-.4-.1-.6-.2-.4-.3-.5-1-.2-1.4.5-.7.8-1.5.8-2.4s-.3-1.7-.8-2.4c-.3-.4-.2-1.1.2-1.4.4-.3 1.1-.2 1.4.2.8 1 1.2 2.3 1.2 3.6s-.4 2.6-1.2 3.6c-.2.3-.5.4-.8.4zm4 2.3c-.2 0-.5-.1-.7-.2-.4-.4-.5-1-.1-1.4 1.2-1.3 1.8-3 1.8-4.7 0-1.8-.7-3.5-1.9-4.8-.4-.4-.4-1 0-1.4s1-.4 1.4 0c1.6 1.7 2.5 3.9 2.5 6.2 0 2.2-.8 4.3-2.2 6-.2.2-.5.3-.8.3zm-9 2.7c-.2 0-.4-.1-.6-.2l-4.8-3.8h-2.1c-1.4 0-2.5-1.1-2.5-2.5v-5c0-1.4 1.1-2.5 2.5-2.5h2.2l4.7-3.8c.3-.2.7-.3 1.1-.1.3.2.5.5.5.9v16c0 .4-.2.7-.6.9-.1.1-.3.1-.4.1zm-7.5-12c-.3 0-.5.2-.5.5v5c0 .3.2.5.5.5h2.5c.2 0 .4.1.6.2l3.4 2.7v-11.8l-3.4 2.7c-.2.1-.4.2-.6.2h-2.5z"></path></symbol>
+  
+  <symbol id="sound-off" viewBox="0 0 22 22"><path d="M10.434 2.098c-.347-.165-.758-.119-1.058.121l-4.726 3.781h-2.154c-1.376 0-2.496 1.12-2.496 2.496v5.009c0 1.376 1.12 2.495 2.496 2.495h2.153l4.726 3.781c.181.145.402.219.625.219.147 0 .295-.032.433-.099.347-.167.567-.516.567-.901v-16c0-.384-.22-.735-.566-.902zm-1.434 14.821l-3.375-2.7c-.178-.142-.398-.219-.625-.219h-2.504c-.274 0-.496-.222-.496-.495v-5.009c0-.274.222-.496.496-.496h2.504c.227 0 .447-.077.625-.219l3.375-2.7v11.838zM19.414 11l2.293-2.293c.391-.391.391-1.023 0-1.414s-1.023-.391-1.414 0l-2.293 2.293-2.293-2.293c-.391-.391-1.023-.391-1.414 0s-.391 1.023 0 1.414l2.293 2.293-2.293 2.293c-.391.391-.391 1.023 0 1.414.195.195.451.293.707.293s.512-.098.707-.293l2.293-2.293 2.293 2.293c.195.195.451.293.707.293s.512-.098.707-.293c.391-.391.391-1.023 0-1.414l-2.293-2.293z"></path></symbol>
+  
+  <!-- social -->
+  <symbol id="apple" viewBox="-1 1 24 24"><path d="M17.6 13.8c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.6-2.3-4.4-2.4-1.9-.2-3.6 1.1-4.6 1.1-.9 0-2.4-1.1-4-1-2 0-3.9 1.2-5 3-2.1 3.7-.5 9.1 1.5 12.1 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 3.9-1s2.4 1 4 1 2.7-1.5 3.7-2.9c1.2-1.7 1.6-3.3 1.7-3.4-.1-.1-3.2-1.3-3.2-4.9zm-3.1-9c.8-1 1.4-2.4 1.2-3.8-1.2 0-2.7.8-3.5 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.6-1.7z"></path></symbol>
+
+  <symbol id="dribbble" viewBox="0 0 24 24"><path d="M12 0c-6.7 0-12 5.3-12 12s5.3 12 12 12 12-5.3 12-12-5.3-12-12-12zm7.9 5.7c1.3 1.7 2.1 3.9 2.3 6.1-.4-.1-2.4-.4-4.7-.4-.8 0-1.5 0-2.3.1 0-.1-.1-.3-.3-.5l-.7-1.5c3.7-1.4 5.3-3.4 5.7-3.8zm-7.9-3.8c2.5 0 4.9.9 6.7 2.5-.3.4-1.9 2.3-5.2 3.6-1.6-2.9-3.3-5.3-3.7-5.9.6-.1 1.4-.2 2.2-.2zm-4.4 1c.4.6 2.1 3 3.7 5.8-4.4 1.2-8.2 1.2-9.2 1.2h-.1c.8-3.1 2.9-5.6 5.6-7zm-5.7 9.1v-.3h.3c1.2 0 5.6-.1 10.1-1.5l.8 1.6c-.1 0-.3 0-.4.1-5.1 1.6-7.9 6-8.3 6.7-1.6-1.7-2.5-4.1-2.5-6.6zm10.1 10.1c-2.3 0-4.4-.8-6.1-2.1.3-.5 2.4-4.4 7.9-6.3 1.3 3.6 2 6.7 2.1 7.6-1.2.6-2.6.8-3.9.8zm5.7-1.8c-.1-.8-.7-3.6-2-7.1.7-.1 1.3-.1 2-.1 2.1 0 3.7.4 4.1.5-.3 2.8-1.8 5.2-4.1 6.7z"></path></symbol>
+
+  <symbol id="facebook" viewBox="0 0 24 24"><path d="M24 1.3v21.3c0 .7-.6 1.3-1.3 1.3h-6.1v-9.3h3.1l.5-3.6h-3.6v-2.2c0-1.1.3-1.8 1.8-1.8h1.9v-3.2c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8v2.7h-3.1v3.6h3.1v9.2h-11.5c-.7 0-1.3-.6-1.3-1.3v-21.4c0-.7.6-1.3 1.3-1.3h21.3c.8 0 1.4.6 1.4 1.3z"></path></symbol>
+   
+  <symbol id="fb-like" viewBox="0 0 20 20"><path d="M0 8v12h5v-12h-5zm2.5 10.8c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8s.8.3.8.8c0 .4-.4.8-.8.8zm3.5-.8h9.5c1.1 0 1.7-1 1.7-1.7 0-.3-.4-1-.4-1 1.4-.3 1.7-1.2 1.7-1.7-.1-.5-.3-.9-.5-1 1-.4 1.5-1.1 1.4-1.9-.1-.8-1-1.5-1-1.5 1-.6.9-1.5.9-1.5-.3-1.3-1.5-1.7-1.7-1.7h-5.6s.3-.5.3-2.4-1.3-3.6-2.6-3.6c0 0-.7.1-1 .3v3.5l-2.7 4.4v9.8z"></path></symbol>
+  
+  <symbol id="googlePlus" viewBox="0 1 24 24"><path d="M7.8 13.5h4.6c-.6 2-2.5 3.4-4.6 3.4-2.7 0-4.9-2.2-4.9-4.9s2.2-4.9 4.9-4.9c1.1 0 2.1.3 3 1l1.8-2.4c-1.4-1.1-3-1.6-4.8-1.6-4.3 0-7.9 3.5-7.9 7.9s3.5 7.9 7.9 7.9 7.9-3.5 7.9-7.9v-1.5h-7.9v3zM21.7 11v-2.2h-2v2.2h-2.2v2h2.2v2.2h2v-2.2h2.2v-2z"></path></symbol>
+  
+  <symbol id="instagram" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8c0-1.2.2-1.9.3-2.3.2-.6.5-1 .9-1.4.5-.4.9-.6 1.4-.9.4-.1 1.1-.3 2.3-.4h4.8m0-2.2c-3.3 0-3.7 0-4.9.1-1.3 0-2.2.2-3 .5-.7.3-1.4.7-2.1 1.4-.7.7-1.1 1.4-1.4 2.1-.3.8-.5 1.7-.5 3-.1 1.2-.1 1.6-.1 4.9 0 3.3 0 3.7.1 4.9.1 1.3.3 2.1.6 2.9.2.8.6 1.5 1.3 2.2.7.7 1.3 1.1 2.1 1.4.8.3 1.6.5 2.9.6h5s3.7 0 4.9-.1c1.3-.1 2.1-.3 2.9-.6.8-.3 1.5-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.8.5-1.6.6-2.9.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.1-.6-2.9-.2-.8-.6-1.5-1.3-2.2-.7-.7-1.3-1.1-2.1-1.4-.8-.3-1.6-.5-2.9-.6h-5zM12 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2-2.8-6.2-6.2-6.2zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path><circle class="st0" cx="18.4" cy="5.6" r="1.4"></circle></symbol>
+  
+  <symbol id="linkedin" viewBox="0 0 24 24"><path d="M22.2 0h-20.4c-1 0-1.8.8-1.8 1.7v20.7c0 1 .8 1.7 1.8 1.7h20.5c1 0 1.8-.8 1.8-1.7v-20.7c-.1-.9-.9-1.7-1.9-1.7zm-14.9 20.2h-3.6v-10.9h3.6v10.9zm-1.8-12.4c-1.2 0-2-.8-2-1.9 0-1.1.8-1.9 2.1-1.9 1.2 0 2 .8 2 1.9-.1 1.1-.9 1.9-2.1 1.9zm14.8 12.4h-3.6v-5.8c0-1.5-.5-2.5-1.8-2.5-1 0-1.6.7-1.9 1.3-.1.2-.1.6-.1.9v6.1h-3.6v-10.9h3.6v1.5c.5-.7 1.3-1.8 3.3-1.8 2.4 0 4.2 1.6 4.2 4.9v6.3z"></path></symbol>
+
+  <symbol id="medium" viewBox="0 0 24 24"><path d="M7.601 5.357c-2.305-1.137-4.6-2.294-6.899-3.444-.577-.289-.694-.216-.694.43-.001 5.147.005 10.294-.008 15.441-.001.57.224.911.726 1.158 2.126 1.047 4.242 2.116 6.362 3.176l.326.151c.308.115.494-.016.562-.315.032-.14.02-.283.02-.438l.009-15.482c.002-.337-.091-.523-.404-.677zm15.983-.001c-2.369-1.184-4.74-2.366-7.101-3.565-.368-.187-.559-.114-.769.231-1.431 2.356-2.876 4.703-4.328 7.046-.144.233-.15.4-.004.637 1.605 2.593 3.198 5.193 4.795 7.79l.238.36.107-.138c2.426-3.948 4.848-7.898 7.283-11.841.204-.33.01-.405-.221-.52zm.413 16.185c.001-4.694.001-9.387.001-14.081v-.38l-.076-.023-7.257 11.812.257.156c2.095 1.05 4.191 2.098 6.287 3.146l.219.097c.314.112.489-.032.554-.329.027-.128.015-.265.015-.398zm-15.273-14.526c-.001 2.547.003 5.093-.008 7.64-.001.234.105.321.285.411 2.204 1.1 4.405 2.205 6.608 3.307l.333.12-7.183-11.692-.035.214z"></path></symbol>
+  
+  <symbol id="pinterest" viewBox="0 0 24 24"><path d="M5.9 13.9c1.2-2-.4-2.5-.6-4-1-6.1 7.1-10.2 11.4-6 2.9 2.9 1 12-3.7 11-4.6-.9 2.2-8.1-1.4-9.5-3-1.1-4.6 3.6-3.2 5.9-.8 4-2.5 7.7-1.8 12.7 2.3-1.7 3.1-4.8 3.7-8.1 1.2.7 1.8 1.4 3.3 1.5 5.5.4 8.6-5.4 7.8-10.7-.7-4.7-5.5-7.1-10.6-6.6-4.1.4-8.1 3.7-8.3 8.3-.1 2.8.7 4.9 3.4 5.5z"></path></symbol>
+  
+  <symbol id="stumbleupon" viewBox="0 0 24 24"><path d="M13.3 9.6l1.6.8 2.5-.8v-1.4c0-3-2.4-5.4-5.4-5.4s-5.4 2.4-5.4 5.4v7.5c0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3v-3.2h-4v3.2c0 3 2.4 5.4 5.4 5.4s5.4-2.4 5.4-5.4v-7.5c0-.7.6-1.3 1.3-1.3s1.3.6 1.3 1.3l-.1 1.4zm6.6 2.9v3.2c0 .7-.6 1.3-1.3 1.3s-1.3-.6-1.3-1.3v-3.2l-2.5.8-1.6-.8v3.2c0 3 2.4 5.4 5.4 5.4s5.4-2.4 5.4-5.4v-3.2h-4.1z"></path></symbol>
+  
+  <symbol id="twitter" viewBox="0 1 24 23"><path d="M21.5 7.6v.6c0 6.6-5 14.1-14 14.1-2.8 0-5.4-.8-7.6-2.2l1.2.1c2.3 0 4.4-.8 6.1-2.1-2.2 0-4-1.5-4.6-3.4.3.1.6.1.9.1.5 0 .9-.1 1.3-.2-2.1-.6-3.8-2.6-3.8-5 .7.4 1.4.6 2.2.6-1.3-.9-2.2-2.4-2.2-4.1 0-.9.2-1.8.7-2.5 2.4 3 6.1 5 10.2 5.2-.1-.4-.1-.7-.1-1.1 0-2.7 2.2-5 4.9-5 1.4 0 2.7.6 3.6 1.6 1-.3 2.1-.7 3-1.3-.4 1.2-1.1 2.1-2.2 2.7 1-.1 1.9-.4 2.8-.8-.6 1.1-1.4 2-2.4 2.7z"></path></symbol>
+  
+  <symbol id="tumblr" viewBox="0 0 23 23"><path d="M12.573 4.94v-4.94h-3.188c-.072.183-.11.4-.11.622-.034.107-.072.184-.072.293-.328 1.829-1.28 3.11-2.892 3.807-.476.218-.914.253-1.39.218v3.987h2.342c.039 5.603.039 8.493.039 8.64v.332c.294 2.449 1.573 3.914 3.843 4.463.914.257 1.901.366 2.892.366 1.279-.036 2.525-.256 3.771-.659v-4.685c-.731.22-1.395.402-1.977.583-1.135.333-2.087.113-2.857-.619-.073-.11-.183-.257-.221-.403-.106-.586-.178-1.206-.178-1.795v-6.222h5.083v-3.988h-5.085z"></path></symbol>
+
+  <symbol id="xing" viewBox="0 0 24 24"><path d="M3.647 4.74c-.208 0-.384.073-.472.216-.091.148-.077.338.02.531l2.34 4.051v.02l-3.678 6.49c-.096.191-.091.383 0 .531.088.142.244.236.452.236h3.461c.518 0 .767-.349.944-.669l3.737-6.608-2.38-4.15c-.172-.307-.433-.649-.964-.649h-3.46zm14.542-4.74c-.517 0-.741.326-.927.659l-7.702 13.658 4.918 9.023c.172.307.437.659.967.659h3.457c.208 0 .371-.079.459-.221.092-.148.09-.343-.007-.535l-4.88-8.915v-.023l7.664-13.551c.096-.191.098-.386.007-.534-.088-.142-.252-.221-.46-.221h-3.496z"></path></symbol>
+  
+  <symbol id="youtube" viewBox="0 0 24 24"><path d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z"></path></symbol>
+
+</svg>
+
+<div class="loadingIcon"><svg class="loading-icon" id="loading-circle" viewBox="0 0 18 18"><circle class="circle" opacity=".1" stroke="#fff" stroke-width="2" stroke-miterlimit="10" cx="9" cy="9" r="8" fill="none"></circle><circle class="dash" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke-dasharray="100,100" cx="9" cy="9" r="8" fill="none"></circle></svg></div>
+<div class="overlay-container">
+	<div class="overlay-ready triggered-left"></div>
+	<div class="overlay-unload overlay-unload-left"></div>
+	<div class="overlay-unload overlay-unload-right"></div>
+</div>
+
+<div id="page" class="site">
+
+	<header id="masthead" class="site-header static-header">
+	<div class="header-wrap clearfix">
+		<div class="site-branding">
+							<h3 class="site-logo">
+					<a href="https://www.skyhousedowntown.com/">
+						<img class="default-logo" src="./ville10_files/skyhouse-logo.png" style="max-width:132px" alt="Skyhouse Downtown"><img class="white-logo" src="./ville10_files/skyhouse-logo-white.png" style="max-width:132px" alt="Skyhouse Downtown">					</a>
+				</h3>
+					</div><!-- .site-branding -->
+
+		<nav class="site-navigation" role="navigation">
+			<div class="menu-top-right-navigation-container"><ul id="right-navigation" class="menu"><li id="menu-item-668" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-668"><a href="https://www.skyhousedowntown.com/#!/floor-plans">Floor Plans</a></li>
+<li id="menu-item-669" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-669"><a href="https://www.skyhousedowntown.com/#">Apply Now</a>
+<ul class="sub-menu">
+	<li id="menu-item-1190" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1190"><a target="_blank" href="https://skyhousemain.prospectportal.com/Apartments/module/application_authentication/property%5Bid%5D/231765/show_in_popup/false/kill_session/1/">Main</a></li>
+	<li id="menu-item-1189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1189"><a target="_blank" href="https://liveskyhousehouston.prospectportal.com/Apartments/module/application_authentication/property%5Bid%5D/536678/show_in_popup/false/kill_session/1/">Houston</a></li>
+</ul>
+</li>
+<li id="menu-item-670" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-670"><a href="https://www.skyhousedowntown.com/#">Residents</a>
+<ul class="sub-menu">
+	<li id="menu-item-1192" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1192"><a target="_blank" href="https://skyhousemain.residentportal.com/resident_portal/?module=authentication&amp;action=view_login">Main</a></li>
+	<li id="menu-item-1191" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1191"><a target="_blank" href="https://liveskyhousehouston.residentportal.com/resident_portal/?module=authentication&amp;action=view_login">Houston</a></li>
+</ul>
+</li>
+<li id="menu-item-679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"><a href="https://www.skyhousedowntown.com/contact/">Contact Us</a></li>
+</ul></div>
+			<span class="menu-trigger">
+				<span class="bars"></span>
+			</span>
+		</nav>
+	</div>
+</header><!-- #masthead -->
+
+<header class="site-header sticky-header sticky-nav">
+	<div class="header-wrap clearfix">
+		<div class="site-branding">
+							<h3 class="site-logo">
+					<a href="https://www.skyhousedowntown.com/">
+						<img class="" src="./ville10_files/skyhouse-logo.png" style="max-width:132px" alt="Skyhouse Downtown">					</a>
+				</h3>
+					</div><!-- .site-branding -->
+
+		<nav class="site-navigation" role="navigation">
+			<div class="menu-top-right-navigation-container"><ul id="right-navigation" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-668"><a href="https://www.skyhousedowntown.com/#!/floor-plans">Floor Plans</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-669"><a href="https://www.skyhousedowntown.com/#">Apply Now</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1190"><a target="_blank" href="https://skyhousemain.prospectportal.com/Apartments/module/application_authentication/property%5Bid%5D/231765/show_in_popup/false/kill_session/1/">Main</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1189"><a target="_blank" href="https://liveskyhousehouston.prospectportal.com/Apartments/module/application_authentication/property%5Bid%5D/536678/show_in_popup/false/kill_session/1/">Houston</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-670"><a href="https://www.skyhousedowntown.com/#">Residents</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1192"><a target="_blank" href="https://skyhousemain.residentportal.com/resident_portal/?module=authentication&amp;action=view_login">Main</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1191"><a target="_blank" href="https://liveskyhousehouston.residentportal.com/resident_portal/?module=authentication&amp;action=view_login">Houston</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"><a href="https://www.skyhousedowntown.com/contact/">Contact Us</a></li>
+</ul></div>
+			<span class="menu-trigger">
+				<span class="bars"></span>
+			</span>
+		</nav>
+	</div>
+</header><!-- #masthead -->
+
+<div class="main-site-navigation">
+	<span class="close"></span>
+	<div class="nav-wrap">
+		<div class="inner-wrap clearfix">
+			<div class="right-nav" data-mh="main-navigation" style="height: 459px;">
+				<div class="vertical-align">
+					<div class="align-middle">
+						<div class="menu-container">
+							<div class="menu-main-site-navigation-container"><ul id="primary-menu" class="menu"><li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-672 current_page_item menu-item-674"><a href="https://www.skyhousedowntown.com/">Home</a></li>
+<li id="menu-item-671" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-671"><a href="https://www.skyhousedowntown.com/#!/floor-plans">Floor Plans</a></li>
+<li id="menu-item-675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-675"><a href="https://www.skyhousedowntown.com/gallery/">Gallery</a></li>
+<li id="menu-item-676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-676"><a href="https://www.skyhousedowntown.com/amenities/">Amenities</a></li>
+<li id="menu-item-677" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-677"><a href="https://www.skyhousedowntown.com/neighborhood/">Neighborhood</a></li>
+<li id="menu-item-1245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1245"><a href="https://www.skyhousedowntown.com/retail/">Retail</a></li>
+<li id="menu-item-1254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1254"><a href="https://www.skyhousedowntown.com/blog/">Blog</a></li>
+<li id="menu-item-678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-678"><a href="https://www.skyhousedowntown.com/contact/">Contact Us</a></li>
+</ul></div>						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="nav-break"></div>
+			<div class="left-nav" data-mh="main-navigation" style="height: 459px;">
+				<div class="main-building">
+											<h3 class="main-bldg-logo">
+							<img class="" src="./ville10_files/skyhouse-main-logo.png" style="max-width:129.5px" alt="Skyhouse Downtown">						</h3>
+					
+					<input class="fooboxshare_post_id" type="hidden" value="672"><h3 class="heading-2 white">Address</h3>
+<p><a title="1725 Main Street, Houston, TX 77002" href="https://goo.gl/maps/JbEt8giFxzP2" target="_blank" rel="noopener">1725 Main Street, Houston, TX 77002</a></p>
+<h3 class="heading-2 white">Phone</h3>
+<p><a title="713.965.0220" href="tel:7139650220" rel="noopener">713.965.0220</a> | <a title="713.965.0223" href="tel:7139650223" rel="noopener">713.965.0223</a></p>
+<p class="external-link"><a class="apply-link" title="Apply Now" href="https://skyhousemain.prospectportal.com/Apartments/module/application_authentication/property%5Bid%5D/231765/show_in_popup/false/kill_session/1/" target="_blank" rel="noopener">Apply Now</a> | <a class="residents-link" title="Residents" href="https://skyhousemain.residentportal.com/resident_portal/?module=authentication&amp;action=view_login" target="_blank" rel="noopener">Residents</a></p>
+				</div>
+				<div class="houston-building">
+											<h3 class="main-bldg-logo">
+							<img class="" src="./ville10_files/skyhouse-houson-logo.png" style="max-width:131.5px" alt="Skyhouse Downtown">						</h3>
+					
+					<input class="fooboxshare_post_id" type="hidden" value="672"><h3 class="heading-2 white">Address</h3>
+<p><a href="https://goo.gl/maps/6yiUrduyFom" target="_blank" rel="noopener" title="1625 Main Street, Houston, TX 77002">1625 Main Street, Houston, TX 77002</a></p>
+<h3 class="heading-2 white">Phone</h3>
+<p><a href="tel:7136541625" rel="noopener" title="713.654.1625">713.654.1625</a> | <a href="tel:7136541625" rel="noopener" title="713.654.1625">713.654.1625</a></p>
+<p class="external-link"><a class="apply-link" href="https://liveskyhousehouston.prospectportal.com/" target="_blank" rel="noopener" title="Apply Now">Apply Now</a> | <a class="residents-link" href="https://skyhousehouston.residentportal.com/resident_portal/?module=authentication&amp;action=view_login" target="_blank" rel="noopener" title="Resdients">Residents</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<style type="text/css">
+		.site-header .site-logo img {
+			height: 27.5px;
+		}
+	</style>
+
+	    <section id="page_banner" class="page-banner slide transparent before" style="height: 857px; min-height: 857px;">
+        <div class="content">
+            <div class="container">
+                <div class="wrap noSpaces">
+                    <div class="section-content">
+                        <div class="banner-content fromBottom">
+                            <h1 class="banner-title heading-1 white done">Luxury Apartments <br>
+in Downtown <br>
+Houston</h1><p class="banner-description description ae-2 white">Located in the heart of Downtown Houston, Skyhouse Downtown is a community with two <br>
+high-rise towers featuring luxury studio, one, two and three-bedroom apartments for rent in one <br>
+of Houston’s most coveted communities.</p><a class="button-style banner-button blue-style banner-floor-plans-button first ae-3" href="https://www.skyhousedowntown.com/#!/floor-plans/floors/1">Houston Building Availability</a><a class="button-style banner-button orange-style banner-floor-plans-button second ae-3" href="https://www.skyhousedowntown.com/#!/floor-plans/floors/2">Main Building Availability</a>                        </div>
+                        
+                                                    <div class="content-bottom clearfix">
+                                <div class="scroll-button-container clearfix">
+                                                                            <a class="scroll-down" href="https://www.skyhousedowntown.com/#scroll-section">Scroll Down</a>
+                                                                                                            </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+
+
+<div class="background full-background full-bg-fixed" style="background-image:url(https://www.skyhousedowntown.com/wp-content/uploads/2019/01/Skyhouse-Downtown-Buildings-Exterior.jpg)"></div>
+
+
+        <style type="text/css">
+        .page-banner .fullscreen-bg:before,
+        .page-banner .banner-video-background:before,
+        .page-banner .background:before,
+        .page-banner .mobile-background:before {
+            background-color: #000000;
+            filter: alpha(opacity=40);
+            opacity: 0.4;
+        }
+    </style>
+
+    <div class="fromLeft ajax-nav ajax-nav-left done">
+        <span class="line-before"></span>
+        <a class="non-button" href="https://www.skyhousedowntown.com/#!/floor-plans/floors/1"><span class="text">Houston Building</span></a>        <span class="line-after"></span>
+    </div>
+
+    <div class="fromRight ajax-nav ajax-nav-right orange-nav-right done">
+        <span class="line-before"></span>
+        <a class="non-button" href="https://www.skyhousedowntown.com/#!/floor-plans/floors/2"><span class="text">Main Building</span></a>        <span class="line-after"></span>
+    </div>
+
+<div class="ajax-nav-cover">
+    <div class="left-cover"></div>
+    <div class="right-cover"></div>
+</div>
+
+
+    </section>
+
+	<div id="content" class="site-content">
+<section id="scroll-section" class="home-amenities slide fullscreen-off animate active before">
+	<div class="content">
+		<div class="container">
+			<div class="wrap noSpaces">
+				<div class="section-content clearfix">
+					<div class="text-content fromBottom done" data-mh="home-amenities" style="height: 681px;">
+						<div class="vertical-align">
+							<div class="align-middle">
+							<h3 class="heading-2 colored">AMENITIES</h3><h2 class="heading-3">Urban Oasis in <br>
+the Heart of <br>
+the City</h2><p class="description">The Skyhouse Downtown offer state-of-the-art <br>
+community and apartment amenities including a 24-hour<br>
+concierge service, Wi-Fi in all common areas, SkyDeck with <br>
+expansive views of the Houston skyline, private balconies<br>
+ in all homes, spa-style bathtubs, floor-to-ceiling windows, <br>
+retail perks, close proximity to many downtown Houston <br>
+attractions including Minute Maid Park, Metrorail, and<br>
+ much more.</p><a class="plus-icon-only" href="https://www.skyhousedowntown.com/#amt_popup"></a>							</div>	
+						</div>
+					</div>
+					<div class="image-content fromBottom done" data-mh="home-amenities" style="height: 681px;">
+						<span class="replace-image" style="background-image: url( https://www.skyhousedowntown.com/wp-content/uploads/2018/05/amenities-image.jpg );"></span>
+						<img class="" src="./ville10_files/amenities-image.jpg" style="max-width:100%" alt="">					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="home-gallery slide fullscreen-off animate active before">
+	<div class="content">
+		<div class="container">
+			<div class="wrap noSpaces">
+				<div class="section-content clearfix">
+					<div class="image-content fromBottom done" data-mh="home-gallery" style="height: 783px;">
+						<img class="" src="./ville10_files/SkyHouse-Downtown-Living-Room-Fitness-Center.png" style="max-width:100%" alt="">					</div>
+					<div class="text-content fromBottom done" data-mh="home-gallery" style="height: 783px;">
+						<div class="vertical-align">
+							<div class="align-middle">
+							<h3 class="heading-2 colored">Gallery</h3><h2 class="heading-1">Picture <br>
+Downtown <br>
+Houston Like <br>
+Never Before</h2><p class="description">Take a look at what separates Skyhouse Downtown from any other high-rise <br>
+apartment community in downtown Houston. View the SkyDeck, PoolDeck,<br>
+ SkyFit Fitness rooms, and more. Explore our contemporary apartment homes<br>
+with expansive 9-ft. ceilings, natural hardwood flooring, and granite<br>
+countertops.. See what it means to be a part of the Skyhouse Downtown Community.</p><a class="button-style" href="https://www.skyhousedowntown.com/gallery/">Our Buildings</a>							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="home-retail slide fullscreen-off animate active">
+	<div class="content">
+		<div class="container">
+			<div class="wrap noSpaces">
+				<div class="section-content clearfix">
+					<div class="image-content fromBottom done" data-mh="home-retail" style="height: 549px;">
+						<span class="replace-image" style="background-image: url( https://www.skyhousedowntown.com/wp-content/uploads/2018/05/retail-image.jpg );"></span>
+						<img class="" src="./ville10_files/retail-image.jpg" style="max-width:100%" alt="">					</div>
+					<div class="text-background"></div>
+					<div class="text-content" data-mh="home-retail" style="height: 549px;">
+						<div class="vertical-align">
+							<div class="align-middle">
+								<div class="text-wrap fromBottom done">
+								<h3 class="heading-2 colored">Retail spaces</h3><h2 class="heading-3 white">Convenience, <br>
+Just Steps <br>
+Away!</h2><p class="description white">Skyhouse Downtown is not only home to some of<br>
+the best apartments in Houston, TX, but also home<br>
+to retailers located on the ground floor of each<br>
+tower. <br>
+<br>
+Find your new favorite shops, just steps away from<br>
+your doorstep.</p>								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<div id="amt_popup" class="amenities-popup">
+	<span class="popup-close">Go Back</span>
+	<div class="popup-wrap clearfix">
+		<div class="left-popup">
+			<div class="vertical-align">
+				<div class="align-middle">
+					<a class="plus-icon-only" href="https://www.skyhousedowntown.com/amenities/"></a><h2 class="heading-3 white">Main<br>
+Building<br>
+Amenities</h2><p class="description white">Explore the amenities of Skyhouse Downtown's main building.</p>	
+				</div>
+			</div>
+		</div>
+		<div class="right-popup">
+			<div class="vertical-align">
+				<div class="align-middle">
+					<a class="plus-icon-only" href="https://www.skyhousedowntown.com/amenities/"></a><h2 class="heading-3 white">Houston<br>
+Building<br>
+Amenities</h2><p class="description white">Explore the amenities of Skyhouse Downtown's Houston building.</p>				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup-background full-background" style="background-image: url( https://www.skyhousedowntown.com/wp-content/uploads/2018/05/amenities-popup.jpg );"></div>
+</div>
+
+
+	</div><!-- #content -->
+
+	<section class="site-footer slide fullscreen-off animate active selected">
+		<div class="content">
+			<div class="container">
+				<div class="wrap noSpaces">
+					<div class="section-content">
+
+						<div class="footer-cta clearfix">
+							<div class="cta-left fromBottom done" data-mh="footer-cta" style="height: 90px;">
+								<h3 class="heading-1 fromBottom done">Schedule <br>
+a Tour <br>
+Today!</h3>							</div>
+							<div class="cta-right fromBottom done" data-mh="footer-cta" style="height: 90px;">
+								<div class="vertical-align">
+									<div class="align-middle">
+										<a class="button-style" href="https://www.skyhousedowntown.com/contact/">Contact Us</a><a class="button-style" target="_blank" href="https://skyhousemain.prospectportal.com/Apartments/module/application_authentication/property%5Bid%5D/231765/show_in_popup/false/kill_session/1/">Apply Now</a>									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer-content clearfix">
+							<div class="left-footer fromBottom clearfix done" data-mh="footer-content" style="">
+								<div class="main-building" data-mh="bldg" style="height: 406px;">
+									<div class="info-wrap">
+																					<h3 class="main-bldg-logo">
+												<img class="" src="./ville10_files/skyhouse-main-logo.png" style="max-width:129.5px" alt="Skyhouse Downtown">											</h3>
+										
+										<input class="fooboxshare_post_id" type="hidden" value="672"><h3 class="heading-2 white">Address</h3>
+<p><a target="_blank" rel="noopener" title="1725 Main Street, Houston, TX 77002">1725 Main Street, Houston, TX 77002</a></p>
+<h3 class="heading-2 white">Phone</h3>
+<p><a href="tel:+1-713-965-0220" rel="noopener" title="713.965.0220">713.965.0220</a> | <a href="tel:+1-713-965-0220" rel="noopener" title="713.965.0220">713.965.0220</a></p>
+<ul class="social-icons ">
+<li><a target="_blank" href="https://www.facebook.com/Skyhouse-Main-Apartment-Homes-242085926140459"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+<li><a target="_blank" href="https://twitter.com/SkyhouseMain"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+<li><a target="_blank" href="https://plus.google.com/102890518770826608313"><i class="fa fa-google-plus " aria-hidden="true"></i></a></li>
+</ul>
+									</div>
+								</div>
+								<div class="houston-building" data-mh="bldg" style="height: 406px;">
+									<div class="info-wrap">
+																					<h3 class="main-bldg-logo">
+												<img class="" src="./ville10_files/skyhouse-houson-logo.png" style="max-width:131.5px" alt="Skyhouse Downtown">											</h3>
+										
+										<input class="fooboxshare_post_id" type="hidden" value="672"><h3 class="heading-2 white">Address</h3>
+<p><a href="https://goo.gl/maps/6yiUrduyFom" target="_blank" rel="noopener" title="1625 Main Street, Houston, TX 77002">1625 Main Street, Houston, TX 77002</a></p>
+<h3 class="heading-2 white">Phone</h3>
+<p><a href="tel:7136541625" rel="noopener" title="713.654.1625">713.654.1625</a> | <a href="tel:7136541625" rel="noopener" title="713.654.1625">713.654.1625</a></p>
+<ul class="social-icons ">
+<li><a target="_blank" href="https://www.facebook.com/skyhouse.houston/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+<li><a target="_blank" href="https://www.yelp.com/biz/skyhouse-houston-houston"><i class="fa fa-yelp " aria-hidden="true"></i></a></li>
+<li><a target="_blank" href="https://plus.google.com/u/0/b/105323994047842189454/105323994047842189454?hl=en"><i class="fa fa-google-plus " aria-hidden="true"></i></a></li>
+</ul>
+									</div>
+								</div>
+							</div>
+							<div class="right-footer fromBottom done" data-mh="footer-content" style="">
+								<div class="upper-content clearfix">
+									<div class="left-content" data-mh="lower-content" style="height: 104px;">
+										<div class="vertical-align">
+											<div class="align-middle">
+																									<h3 class="footer-logo">
+														<a href="https://www.skyhousedowntown.com/">
+															<img class="" src="./ville10_files/skyhouse-footer-logo.png" style="max-width:172.5px" alt="Skyhouse Downtown">														</a>
+													</h3>
+																							</div>
+										</div>
+									</div>
+									<div class="right-content" data-mh="lower-content" style="height: 104px;">
+										<div class="vertical-align">
+											<div class="align-middle">
+																									<h3 class="heading-2">Office Hours</h3>
+													<p class="hours-sc description">Monday - Friday:  9:00 am - 6:00 pm<br>
+Saturday: 10:00 am - 5:00 pm<br>
+Sunday: 1:00 pm - 5:00 pm</p>																							</div>
+										</div>
+									</div>
+								</div>
+								<div class="lower-content clearfix">
+									<div class="left-content">
+										<p>© Skyhouse&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved</p>
+									</div>
+									<div class="right-content">
+										<p>Site by <a href="https://www.razzinteractive.com/" target="_blank" rel="noopener" title="Razz Interactive">Razz Interactive</a> and <a href="https://www.gtma.agency/" target="_blank" rel="noopener" title="GTMA">GTMA</a> |&nbsp;<img class="alignnone wp-image-1022" src="./ville10_files/footer-small-logo-300x41.png" alt="Equal Housing Opportunity, ADA, &amp; Pet Friendly Logos" width="91" height="12" srcset="https://www.skyhousedowntown.com/wp-content/uploads/2018/05/footer-small-logo-300x41.png 300w, https://www.skyhousedowntown.com/wp-content/uploads/2018/05/footer-small-logo-768x105.png 768w, https://www.skyhousedowntown.com/wp-content/uploads/2018/05/footer-small-logo-1024x140.png 1024w, https://www.skyhousedowntown.com/wp-content/uploads/2018/05/footer-small-logo.png 182w" sizes="(max-width: 91px) 100vw, 91px"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="background full-background" style="background-image:url(https://www.skyhousedowntown.com/wp-content/uploads/2018/05/footer-background.jpg)"></div>
+	</section>
+
+</div><!-- #page -->
+
+<style>
+.special-announcement .sa-text .sa-title {
+font-size: 16px;
+}
+.special-announcement .sa-text .sa-description {
+font-size: 16px;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./ville10_files/js" style="display: none !important;"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-21473944-124');
+</script>
+<!-- Google Tag Manager (noscript) --><script type="text/javascript" src="./ville10_files/skyhousedowntown"></script>
+<script type="text/javascript" src="./ville10_files/script.js.завантаження"></script>
+<script type="text/javascript" src="./ville10_files/plugins.js.завантаження"></script>
+<script type="text/javascript" src="./ville10_files/main.js.завантаження"></script>
+<script type="text/javascript" src="./ville10_files/gallery.js.завантаження"></script>
+<script type="text/javascript" src="./ville10_files/wp-embed.min.js.завантаження"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ab6a1861c2","applicationID":"259276971","transactionName":"YgQHNkECC0NUVREIWFtOJAFHCgpeGl4KDFI=","queueTime":0,"applicationTime":549,"atts":"TkMEQAkYGE0=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<span style="font-family:&#39;foobox&#39;; color:transparent; position:absolute; top:-1000em;">f</span></body></html>

@@ -1,0 +1,22 @@
+
+.App{
+	box-sizing: border-box;
+}
+
+.App-body{
+	font-family: 'Roboto', sans-serif;
+}
+.App-header {
+	background-image: url("../MaketSite/jpg/icon2.png");
+	background-position: center;
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  	height: 500px;
+  }
+
+.App-search-block{
+	float: right;
+	text-align: center;
+	padding: 20px;
+}
